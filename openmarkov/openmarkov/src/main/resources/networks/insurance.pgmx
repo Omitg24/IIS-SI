@@ -1,0 +1,762 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ProbModelXML formatVersion="0.2.0">
+  <ProbNet type="BayesianNetwork">
+    <DecisionCriteria>
+      <Criterion name="---" unit="---" />
+    </DecisionCriteria>
+    <Properties>
+      <Property name="Version" value="1.0" />
+    </Properties>
+    <Variables>
+      <Variable name="GoodStudent" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="False" />
+          <State name="True" />
+        </States>
+      </Variable>
+      <Variable name="Age" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Senior" />
+          <State name="Adult" />
+          <State name="Adolescent" />
+        </States>
+      </Variable>
+      <Variable name="SocioEcon" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Wealthy" />
+          <State name="UpperMiddle" />
+          <State name="Middle" />
+          <State name="Prole" />
+        </States>
+      </Variable>
+      <Variable name="RiskAversion" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Cautious" />
+          <State name="Normal" />
+          <State name="Adventurous" />
+          <State name="Psychopath" />
+        </States>
+      </Variable>
+      <Variable name="VehicleYear" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Older" />
+          <State name="Current" />
+        </States>
+      </Variable>
+      <Variable name="ThisCarDam" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Severe" />
+          <State name="Moderate" />
+          <State name="Mild" />
+          <State name="None" />
+        </States>
+      </Variable>
+      <Variable name="RuggedAuto" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Tank" />
+          <State name="Football" />
+          <State name="EggShell" />
+        </States>
+      </Variable>
+      <Variable name="Accident" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Severe" />
+          <State name="Moderate" />
+          <State name="Mild" />
+          <State name="None" />
+        </States>
+      </Variable>
+      <Variable name="MakeModel" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="SuperLuxury" />
+          <State name="Luxury" />
+          <State name="FamilySedan" />
+          <State name="Economy" />
+          <State name="SportsCar" />
+        </States>
+      </Variable>
+      <Variable name="DrivQuality" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Excellent" />
+          <State name="Normal" />
+          <State name="Poor" />
+        </States>
+      </Variable>
+      <Variable name="Mileage" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Domino" />
+          <State name="FiftyThou" />
+          <State name="TwentyThou" />
+          <State name="FiveThou" />
+        </States>
+      </Variable>
+      <Variable name="Antilock" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="False" />
+          <State name="True" />
+        </States>
+      </Variable>
+      <Variable name="DrivingSkill" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Expert" />
+          <State name="Normal" />
+          <State name="SubStandard" />
+        </States>
+      </Variable>
+      <Variable name="SeniorTrain" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="False" />
+          <State name="True" />
+        </States>
+      </Variable>
+      <Variable name="ThisCarCost" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Million" />
+          <State name="HundredThou" />
+          <State name="TenThou" />
+          <State name="Thousand" />
+        </States>
+      </Variable>
+      <Variable name="Theft" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="False" />
+          <State name="True" />
+        </States>
+      </Variable>
+      <Variable name="CarValue" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Million" />
+          <State name="FiftyThou" />
+          <State name="TwentyThou" />
+          <State name="TenThou" />
+          <State name="FiveThou" />
+        </States>
+      </Variable>
+      <Variable name="HomeBase" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Rural" />
+          <State name="Suburb" />
+          <State name="City" />
+          <State name="Secure" />
+        </States>
+      </Variable>
+      <Variable name="AntiTheft" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="False" />
+          <State name="True" />
+        </States>
+      </Variable>
+      <Variable name="PropCost" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Million" />
+          <State name="HundredThou" />
+          <State name="TenThou" />
+          <State name="Thousand" />
+        </States>
+      </Variable>
+      <Variable name="OtherCarCost" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Million" />
+          <State name="HundredThou" />
+          <State name="TenThou" />
+          <State name="Thousand" />
+        </States>
+      </Variable>
+      <Variable name="OtherCar" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="False" />
+          <State name="True" />
+        </States>
+      </Variable>
+      <Variable name="MedCost" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Million" />
+          <State name="HundredThou" />
+          <State name="TenThou" />
+          <State name="Thousand" />
+        </States>
+      </Variable>
+      <Variable name="Cushioning" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Excellent" />
+          <State name="Good" />
+          <State name="Fair" />
+          <State name="Poor" />
+        </States>
+      </Variable>
+      <Variable name="Airbag" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="False" />
+          <State name="True" />
+        </States>
+      </Variable>
+      <Variable name="ILiCost" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Million" />
+          <State name="HundredThou" />
+          <State name="TenThou" />
+          <State name="Thousand" />
+        </States>
+      </Variable>
+      <Variable name="DrivHist" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Many" />
+          <State name="One" />
+          <State name="Zero" />
+        </States>
+      </Variable>
+    </Variables>
+    <Links>
+      <Link directed="true">
+        <Variable name="Age" />
+        <Variable name="GoodStudent" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Age" />
+        <Variable name="SocioEcon" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Age" />
+        <Variable name="RiskAversion" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Age" />
+        <Variable name="DrivingSkill" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Age" />
+        <Variable name="SeniorTrain" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Age" />
+        <Variable name="MedCost" />
+      </Link>
+      <Link directed="true">
+        <Variable name="SocioEcon" />
+        <Variable name="GoodStudent" />
+      </Link>
+      <Link directed="true">
+        <Variable name="SocioEcon" />
+        <Variable name="RiskAversion" />
+      </Link>
+      <Link directed="true">
+        <Variable name="SocioEcon" />
+        <Variable name="VehicleYear" />
+      </Link>
+      <Link directed="true">
+        <Variable name="SocioEcon" />
+        <Variable name="MakeModel" />
+      </Link>
+      <Link directed="true">
+        <Variable name="SocioEcon" />
+        <Variable name="HomeBase" />
+      </Link>
+      <Link directed="true">
+        <Variable name="SocioEcon" />
+        <Variable name="AntiTheft" />
+      </Link>
+      <Link directed="true">
+        <Variable name="SocioEcon" />
+        <Variable name="OtherCar" />
+      </Link>
+      <Link directed="true">
+        <Variable name="RiskAversion" />
+        <Variable name="VehicleYear" />
+      </Link>
+      <Link directed="true">
+        <Variable name="RiskAversion" />
+        <Variable name="MakeModel" />
+      </Link>
+      <Link directed="true">
+        <Variable name="RiskAversion" />
+        <Variable name="DrivQuality" />
+      </Link>
+      <Link directed="true">
+        <Variable name="RiskAversion" />
+        <Variable name="SeniorTrain" />
+      </Link>
+      <Link directed="true">
+        <Variable name="RiskAversion" />
+        <Variable name="HomeBase" />
+      </Link>
+      <Link directed="true">
+        <Variable name="RiskAversion" />
+        <Variable name="AntiTheft" />
+      </Link>
+      <Link directed="true">
+        <Variable name="RiskAversion" />
+        <Variable name="DrivHist" />
+      </Link>
+      <Link directed="true">
+        <Variable name="VehicleYear" />
+        <Variable name="RuggedAuto" />
+      </Link>
+      <Link directed="true">
+        <Variable name="VehicleYear" />
+        <Variable name="Antilock" />
+      </Link>
+      <Link directed="true">
+        <Variable name="VehicleYear" />
+        <Variable name="CarValue" />
+      </Link>
+      <Link directed="true">
+        <Variable name="VehicleYear" />
+        <Variable name="Airbag" />
+      </Link>
+      <Link directed="true">
+        <Variable name="ThisCarDam" />
+        <Variable name="ThisCarCost" />
+      </Link>
+      <Link directed="true">
+        <Variable name="RuggedAuto" />
+        <Variable name="ThisCarDam" />
+      </Link>
+      <Link directed="true">
+        <Variable name="RuggedAuto" />
+        <Variable name="OtherCarCost" />
+      </Link>
+      <Link directed="true">
+        <Variable name="RuggedAuto" />
+        <Variable name="Cushioning" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Accident" />
+        <Variable name="ThisCarDam" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Accident" />
+        <Variable name="OtherCarCost" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Accident" />
+        <Variable name="MedCost" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Accident" />
+        <Variable name="ILiCost" />
+      </Link>
+      <Link directed="true">
+        <Variable name="MakeModel" />
+        <Variable name="RuggedAuto" />
+      </Link>
+      <Link directed="true">
+        <Variable name="MakeModel" />
+        <Variable name="Antilock" />
+      </Link>
+      <Link directed="true">
+        <Variable name="MakeModel" />
+        <Variable name="CarValue" />
+      </Link>
+      <Link directed="true">
+        <Variable name="MakeModel" />
+        <Variable name="Airbag" />
+      </Link>
+      <Link directed="true">
+        <Variable name="DrivQuality" />
+        <Variable name="Accident" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Mileage" />
+        <Variable name="Accident" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Mileage" />
+        <Variable name="CarValue" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Antilock" />
+        <Variable name="Accident" />
+      </Link>
+      <Link directed="true">
+        <Variable name="DrivingSkill" />
+        <Variable name="DrivQuality" />
+      </Link>
+      <Link directed="true">
+        <Variable name="DrivingSkill" />
+        <Variable name="DrivHist" />
+      </Link>
+      <Link directed="true">
+        <Variable name="SeniorTrain" />
+        <Variable name="DrivingSkill" />
+      </Link>
+      <Link directed="true">
+        <Variable name="ThisCarCost" />
+        <Variable name="PropCost" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Theft" />
+        <Variable name="ThisCarCost" />
+      </Link>
+      <Link directed="true">
+        <Variable name="CarValue" />
+        <Variable name="ThisCarCost" />
+      </Link>
+      <Link directed="true">
+        <Variable name="CarValue" />
+        <Variable name="Theft" />
+      </Link>
+      <Link directed="true">
+        <Variable name="HomeBase" />
+        <Variable name="Theft" />
+      </Link>
+      <Link directed="true">
+        <Variable name="AntiTheft" />
+        <Variable name="Theft" />
+      </Link>
+      <Link directed="true">
+        <Variable name="OtherCarCost" />
+        <Variable name="PropCost" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Cushioning" />
+        <Variable name="MedCost" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Airbag" />
+        <Variable name="Cushioning" />
+      </Link>
+    </Links>
+    <Potentials>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="GoodStudent" />
+          <Variable name="SocioEcon" />
+          <Variable name="Age" />
+        </Variables>
+        <Values>1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 0.6 0.4 0.5 0.5 0.8 0.2 0.9 0.1</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="Age" />
+        </Variables>
+        <Values>0.2 0.6 0.2</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="SocioEcon" />
+          <Variable name="Age" />
+        </Variables>
+        <Values>0.01 0.29 0.2 0.5 0.01 0.19 0.4 0.4 0.01 0.19 0.4 0.4</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="RiskAversion" />
+          <Variable name="Age" />
+          <Variable name="SocioEcon" />
+        </Variables>
+        <Values>0.5 0.4 0.09 0.01 0.3 0.4 0.285 0.015 0.1 0.3 0.58 0.02 0.5 0.4 0.09 0.01 0.2 0.5 0.285 0.015 0.1 0.4 0.48 0.02 0.6 0.35 0.04 0.01 0.2 0.6 0.185 0.015 0.1 0.5 0.38 0.02 0.5 0.4 0.09 0.01 0.2 0.5 0.285 0.015 0.1 0.3 0.58 0.02</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="VehicleYear" />
+          <Variable name="SocioEcon" />
+          <Variable name="RiskAversion" />
+        </Variables>
+        <Values>0.1 0.9 0.2 0.8 0.7 0.3 0.85 0.15 0.1 0.9 0.2 0.8 0.7 0.3 0.85 0.15 0.1 0.9 0.2 0.8 0.7 0.3 0.85 0.15 0.1 0.9 0.2 0.8 0.7 0.3 0.85 0.15</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="ThisCarDam" />
+          <Variable name="Accident" />
+          <Variable name="RuggedAuto" />
+        </Variables>
+        <Values>0.55 0.2 0.2 0.05 0.05 0.3 0.6 0.05 1.0E-6 0.009999 0.29 0.7 0.0 0.0 0.0 1.0 0.99 0.009 9.99E-4 1.0E-6 0.1 0.8 0.099 0.001 1.0E-6 0.049999 0.75 0.2 0.0 0.0 0.0 1.0 0.9999 9.0E-5 9.0E-6 1.0E-6 0.299 0.7 9.99E-4 1.0E-6 0.001 0.098 0.9 0.001 0.0 0.0 0.0 1.0</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="RuggedAuto" />
+          <Variable name="MakeModel" />
+          <Variable name="VehicleYear" />
+        </Variables>
+        <Values>0.4 0.55 0.05 0.3 0.6 0.1 0.4 0.55 0.05 0.0 0.1 0.9 0.01 0.04 0.95 0.4 0.55 0.05 0.3 0.6 0.1 0.2 0.6 0.2 0.0 0.5 0.5 0.01 0.04 0.95</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="Accident" />
+          <Variable name="Antilock" />
+          <Variable name="Mileage" />
+          <Variable name="DrivQuality" />
+        </Variables>
+        <Values>0.003 0.007 0.01 0.98 0.002 0.003 0.01 0.985 0.005 0.005 0.01 0.98 0.001 0.002 0.007 0.99 0.001 0.002 0.007 0.99 0.001 0.001 0.003 0.995 0.001 0.001 0.003 0.995 1.0E-4 2.0E-4 7.0E-4 0.999 0.01 0.02 0.03 0.94 0.01 0.01 0.03 0.95 0.005 0.015 0.03 0.95 0.003 0.007 0.02 0.97 0.005 0.015 0.02 0.96 0.005 0.005 0.01 0.98 0.005 0.005 0.01 0.98 0.001 0.002 0.007 0.99 0.5 0.3 0.1 0.1 0.3 0.3 0.2 0.2 0.4 0.2 0.2 0.2 0.2 0.2 0.3 0.3 0.3 0.2 0.2 0.3 0.1 0.2 0.3 0.4 0.1 0.1 0.2 0.6 0.03 0.07 0.2 0.7</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="MakeModel" />
+          <Variable name="SocioEcon" />
+          <Variable name="RiskAversion" />
+        </Variables>
+        <Values>0.2 0.4 0.09 0.01 0.3 0.0 0.45 0.3 0.05 0.2 0.0 0.0 0.65 0.2 0.15 0.0 0.0 0.2 0.7 0.1 0.2 0.4 0.09 0.01 0.3 0.0 0.45 0.3 0.05 0.2 0.0 0.0 0.65 0.2 0.15 0.0 0.0 0.2 0.7 0.1 0.2 0.4 0.09 0.01 0.3 0.0 0.45 0.3 0.05 0.2 0.0 0.0 0.65 0.2 0.15 0.0 0.0 0.2 0.7 0.1 0.2 0.4 0.09 0.01 0.3 0.0 0.45 0.3 0.05 0.2 0.0 0.0 0.65 0.2 0.15 0.0 0.0 0.2 0.7 0.1</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="DrivQuality" />
+          <Variable name="DrivingSkill" />
+          <Variable name="RiskAversion" />
+        </Variables>
+        <Values>1.0 0.0 0.0 0.2 0.8 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 0.98 0.01 0.01 0.3 0.4 0.3 0.0 0.0 1.0 0.5 0.2 0.3 0.3 0.2 0.5 0.0 0.0 1.0</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="Mileage" />
+        </Variables>
+        <Values>0.1 0.4 0.4 0.1</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="Antilock" />
+          <Variable name="MakeModel" />
+          <Variable name="VehicleYear" />
+        </Variables>
+        <Values>0.85 0.15 0.7 0.3 1.0 0.0 1.0 0.0 0.9 0.1 0.01 0.99 0.01 0.99 0.6 0.4 0.999 0.001 0.1 0.9</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="DrivingSkill" />
+          <Variable name="Age" />
+          <Variable name="SeniorTrain" />
+        </Variables>
+        <Values>0.1 0.5 0.4 0.1 0.6 0.3 0.05 0.45 0.5 0.3 0.6 0.1 0.1 0.6 0.3 0.05 0.45 0.5</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="SeniorTrain" />
+          <Variable name="Age" />
+          <Variable name="RiskAversion" />
+        </Variables>
+        <Values>0.1 0.9 1.0 0.0 1.0 0.0 0.7 0.3 1.0 0.0 1.0 0.0 0.999999 1.0E-6 1.0 0.0 1.0 0.0 0.999999 1.0E-6 1.0 0.0 1.0 0.0</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="ThisCarCost" />
+          <Variable name="ThisCarDam" />
+          <Variable name="CarValue" />
+          <Variable name="Theft" />
+        </Variables>
+        <Values>0.97 0.029998 1.0E-6 1.0E-6 0.95 0.044 0.003 0.003 0.0 0.01 0.01 0.98 0.0 0.0 0.0 1.0 0.0 0.998 0.001 0.001 0.0 0.99 0.005 0.005 0.0 0.0 0.01 0.99 0.0 0.0 0.0 1.0 0.0 0.99 0.005 0.005 0.0 0.98 0.01 0.01 0.0 0.0 0.01 0.99 0.0 0.0 0.0 1.0 0.0 0.0 0.99 0.01 0.0 0.0 0.85 0.15 0.0 0.0 0.05 0.95 0.0 0.0 0.0 1.0 0.0 0.0 0.95 0.05 0.0 0.0 0.75 0.25 0.0 0.0 0.05 0.95 0.0 0.0 0.0 1.0 0.99 0.009998 1.0E-6 1.0E-6 0.98 0.018 0.001 0.001 0.7 0.25 0.03 0.02 0.75 0.2 0.01 0.04 0.0 0.999998 1.0E-6 1.0E-6 0.0 0.998 0.001 0.001 0.0 0.95 0.02 0.03 0.0 0.95 0.01 0.04 0.0 0.999998 1.0E-6 1.0E-6 0.0 0.998 0.001 0.001 0.0 0.95 0.02 0.03 0.0 0.95 0.01 0.04 0.0 0.0 0.999999 1.0E-6 0.0 0.0 0.99 0.01 0.0 0.0 0.97 0.03 0.0 0.0 0.95 0.05 0.0 0.0 0.97 0.03 0.0 0.0 0.95 0.05 0.0 0.0 0.85 0.15 0.0 0.0 0.8 0.2</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="Theft" />
+          <Variable name="AntiTheft" />
+          <Variable name="HomeBase" />
+          <Variable name="CarValue" />
+        </Variables>
+        <Values>0.999999 1.0E-6 0.999999 1.0E-6 0.999999 1.0E-6 0.999999 1.0E-6 0.999999 1.0E-6 0.999999 1.0E-6 0.999999 1.0E-6 0.999999 1.0E-6 0.9998 2.0E-4 0.99995 5.0E-5 0.9995 5.0E-4 0.9997 3.0E-4 0.99 0.01 0.995 0.005 0.999998 2.0E-6 0.999998 2.0E-6 0.9998 2.0E-4 0.99995 5.0E-5 0.9995 5.0E-4 0.9997 3.0E-4 0.99 0.01 0.995 0.005 0.999997 3.0E-6 0.999997 3.0E-6 0.9999 1.0E-4 0.99998 2.0E-5 0.9998 2.0E-4 0.9999 1.0E-4 0.995 0.005 0.998 0.002 0.999998 2.0E-6 0.999998 2.0E-6 0.99999 1.0E-5 0.99999 1.0E-5 0.99999 1.0E-5 0.99999 1.0E-5 0.999 0.001 0.9995 5.0E-4 0.999999 1.0E-6 0.999999 1.0E-6</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="CarValue" />
+          <Variable name="MakeModel" />
+          <Variable name="VehicleYear" />
+          <Variable name="Mileage" />
+        </Variables>
+        <Values>0.999996 1.0E-6 1.0E-6 1.0E-6 1.0E-6 0.0 0.3 0.3 0.2 0.2 0.0 0.0 1.0E-6 0.009999 0.99 0.0 0.0 1.0E-6 1.0E-6 0.999998 0.01 0.01 0.02 0.06 0.9 1.0 0.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 0.0 0.9 0.1 0.0 0.0 0.0 0.1 0.8 0.1 0.01 0.09 0.8 0.1 0.0 0.999996 1.0E-6 1.0E-6 1.0E-6 1.0E-6 0.0 0.3 0.3 0.3 0.1 0.0 0.0 0.1 0.2 0.7 0.0 0.0 1.0E-6 0.009999 0.99 0.01 0.02 0.1 0.47 0.4 1.0 0.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 0.0 0.9 0.1 0.0 0.0 0.0 0.1 0.8 0.1 0.01 0.09 0.8 0.1 0.0 0.999996 1.0E-6 1.0E-6 1.0E-6 1.0E-6 0.0 0.5 0.3 0.15 0.05 0.0 0.0 0.2 0.3 0.5 0.0 0.0 1.0E-4 0.2999 0.7 0.01 0.03 0.3 0.5 0.16 1.0 0.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 0.0 0.9 0.1 0.0 0.0 0.0 0.1 0.8 0.1 0.01 0.09 0.8 0.1 0.0 0.999996 1.0E-6 1.0E-6 1.0E-6 1.0E-6 0.0 0.7 0.2 0.09 0.01 0.0 0.0 0.5 0.3 0.2 0.0 0.0 0.05 0.7 0.25 0.01 0.06 0.6 0.3 0.03 1.0 0.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 0.0 0.9 0.1 0.0 0.0 0.0 0.1 0.8 0.1 0.01 0.09 0.8 0.1 0.0</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="HomeBase" />
+          <Variable name="RiskAversion" />
+          <Variable name="SocioEcon" />
+        </Variables>
+        <Values>1.0E-6 1.0E-6 1.0E-6 0.999997 0.148999 0.001 1.0E-6 0.85 0.049998 1.0E-6 1.0E-6 0.95 0.01 1.0E-6 0.5 0.489999 1.0E-6 1.0E-6 1.0E-6 0.999997 0.099999 0.4 1.0E-6 0.5 0.1 0.3 0.4 0.2 0.01 0.04 0.6 0.35 0.025554 0.024445 1.0E-6 0.95 0.1 0.6 1.0E-6 0.299999 0.14 0.6 0.25 0.01 0.01 0.04 0.8 0.15 0.149999 0.05 0.8 1.0E-6 0.149999 0.05 0.8 1.0E-6 0.149999 0.05 0.8 1.0E-6 0.15 0.049999 0.8 1.0E-6</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="AntiTheft" />
+          <Variable name="RiskAversion" />
+          <Variable name="SocioEcon" />
+        </Variables>
+        <Values>1.0E-6 0.999999 0.2 0.8 0.5 0.5 0.5 0.5 1.0E-6 0.999999 0.1 0.9 0.8 0.2 0.95 0.05 1.0E-6 0.999999 0.7 0.3 0.999999 1.0E-6 0.999999 1.0E-6 0.05 0.95 0.9 0.1 0.999999 1.0E-6 0.999999 1.0E-6</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="PropCost" />
+          <Variable name="OtherCarCost" />
+          <Variable name="ThisCarCost" />
+        </Variables>
+        <Values>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.4 0.6 0.0 0.0 0.05 0.95 0.0 0.0 0.02 0.98 0.0 0.0 1.0 0.0 0.0 0.0 0.2 0.8 0.0 0.0 0.0 0.4 0.6 0.0 0.0 0.05 0.95 0.0 1.0 0.0 0.0 0.0 0.02 0.98 0.0 0.0 0.0 0.05 0.95 0.0 0.0 0.0 0.3 0.7</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="OtherCarCost" />
+          <Variable name="Accident" />
+          <Variable name="RuggedAuto" />
+        </Variables>
+        <Values>1.0E-4 0.4449 0.55 0.005 4.0E-5 0.29996 0.3 0.4 2.0E-5 0.01998 0.03 0.95 0.0 0.0 0.0 1.0 6.0E-5 0.39994 0.5 0.1 3.0E-5 0.29997 0.2 0.5 5.0E-5 0.009985 0.01 0.98 0.0 0.0 0.0 1.0 4.0E-5 0.39996 0.4 0.2 2.0E-5 0.19998 0.2 0.6 1.0E-5 0.00499 0.005 0.99 0.0 0.0 0.0 1.0</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="OtherCar" />
+          <Variable name="SocioEcon" />
+        </Variables>
+        <Values>0.05 0.95 0.1 0.9 0.2 0.8 0.5 0.5</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="MedCost" />
+          <Variable name="Accident" />
+          <Variable name="Age" />
+          <Variable name="Cushioning" />
+        </Variables>
+        <Values>0.02 0.03 0.05 0.9 0.01 0.01 0.03 0.95 0.001 0.002 0.007 0.99 0.0 0.0 0.0 1.0 0.01 0.01 0.03 0.95 0.001 0.002 0.007 0.99 1.0E-6 9.0E-6 9.9E-4 0.999 0.0 0.0 0.0 1.0 0.01 0.01 0.03 0.95 0.001 0.002 0.007 0.99 1.0E-6 9.0E-6 9.9E-4 0.999 0.0 0.0 0.0 1.0 0.03 0.07 0.3 0.6 0.01 0.02 0.07 0.9 0.002 0.003 0.025 0.97 0.0 0.0 0.0 1.0 0.01 0.02 0.07 0.9 0.01 0.02 0.02 0.95 1.0E-5 9.0E-5 0.0099 0.99 0.0 0.0 0.0 1.0 0.01 0.02 0.07 0.9 0.01 0.02 0.02 0.95 1.0E-5 9.0E-5 0.0099 0.99 0.0 0.0 0.0 1.0 0.2 0.2 0.3 0.3 0.1 0.2 0.2 0.5 0.003 0.007 0.04 0.95 0.0 0.0 0.0 1.0 0.1 0.2 0.2 0.5 0.02 0.03 0.15 0.8 1.0E-4 9.0E-4 0.019 0.98 0.0 0.0 0.0 1.0 0.1 0.2 0.2 0.5 0.02 0.03 0.15 0.8 1.0E-4 9.0E-4 0.019 0.98 0.0 0.0 0.0 1.0 0.3 0.3 0.2 0.2 0.2 0.2 0.3 0.3 0.01 0.02 0.07 0.9 0.0 0.0 0.0 1.0 0.2 0.2 0.3 0.3 0.1 0.2 0.2 0.5 0.001 0.009 0.03 0.96 0.0 0.0 0.0 1.0 0.2 0.2 0.3 0.3 0.1 0.2 0.2 0.5 0.001 0.009 0.03 0.96 0.0 0.0 0.0 1.0</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="Cushioning" />
+          <Variable name="RuggedAuto" />
+          <Variable name="Airbag" />
+        </Variables>
+        <Values>0.3 0.7 0.0 0.0 0.0 0.3 0.6 0.1 0.0 0.0 0.3 0.7 1.0 0.0 0.0 0.0 0.3 0.6 0.1 0.0 0.0 0.2 0.3 0.5</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="Airbag" />
+          <Variable name="MakeModel" />
+          <Variable name="VehicleYear" />
+        </Variables>
+        <Values>0.9 0.1 0.4 0.6 0.8 0.2 0.95 0.05 0.9 0.1 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="ILiCost" />
+          <Variable name="Accident" />
+        </Variables>
+        <Values>0.04 0.06 0.1 0.8 0.02 0.03 0.05 0.9 1.0E-6 1.0E-6 9.98E-4 0.999 0.0 0.0 0.0 1.0</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="DrivHist" />
+          <Variable name="DrivingSkill" />
+          <Variable name="RiskAversion" />
+        </Variables>
+        <Values>1.0E-6 1.0E-6 0.999998 0.01 0.04 0.95 0.4 0.3 0.3 1.0E-6 0.009999 0.99 0.03 0.07 0.9 0.82 0.15 0.03 0.1 0.3 0.6 0.2 0.3 0.5 0.99 0.008 0.002 0.4 0.3 0.3 0.6 0.3 0.1 0.995 0.004 0.001</Values>
+      </Potential>
+    </Potentials>
+  </ProbNet>
+  <InferenceOptions>
+    <MulticriteriaOptions>
+      <SelectedAnalysisType>UNICRITERION</SelectedAnalysisType>
+      <Unicriterion>
+        <Scales>
+          <Scale Criterion="---" Value="1.0" />
+        </Scales>
+      </Unicriterion>
+      <CostEffectiveness>
+        <Scales>
+          <Scale Criterion="---" Value="1.0" />
+        </Scales>
+        <CE_Criteria>
+          <CE_Criterion Criterion="---" Value="Cost" />
+        </CE_Criteria>
+      </CostEffectiveness>
+    </MulticriteriaOptions>
+  </InferenceOptions>
+</ProbModelXML>

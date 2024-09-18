@@ -1,0 +1,1813 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ProbModelXML formatVersion="0.2.0">
+  <ProbNet type="BayesianNetwork">
+    <DecisionCriteria>
+      <Criterion name="---" unit="---" />
+    </DecisionCriteria>
+    <Properties>
+      <Property name="Version" value="1.0" />
+      <Property name="KindOfGraph" value="directed" />
+      <Property name="VisualPrecision" value="0.0" />
+    </Properties>
+    <Variables>
+      <Variable name="AppOK" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Incorrect_Corrupt" />
+          <State name="Correct" />
+        </States>
+      </Variable>
+      <Variable name="DataFile" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Incorrect_Corrupt" />
+          <State name="Correct" />
+        </States>
+      </Variable>
+      <Variable name="AppData" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Incorrect_or_corrupt" />
+          <State name="Correct" />
+        </States>
+      </Variable>
+      <Variable name="DskLocal" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Less_than_2_Mb" />
+          <State name="Greater_than_2_Mb" />
+        </States>
+      </Variable>
+      <Variable name="PrtSpool" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Disabled" />
+          <State name="Enabled" />
+        </States>
+      </Variable>
+      <Variable name="PrtOn" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="No" />
+          <State name="Yes" />
+        </States>
+      </Variable>
+      <Variable name="PrtPaper" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="No_Paper" />
+          <State name="Has_Paper" />
+        </States>
+      </Variable>
+      <Variable name="NetPrint" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Yes__Network_printer_" />
+          <State name="No__Local_printer_" />
+        </States>
+      </Variable>
+      <Variable name="PrtDriver" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="No" />
+          <State name="Yes" />
+        </States>
+      </Variable>
+      <Variable name="PrtThread" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Corrupt_Buggy" />
+          <State name="OK" />
+        </States>
+      </Variable>
+      <Variable name="EMFOK" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="No" />
+          <State name="Yes" />
+        </States>
+      </Variable>
+      <Variable name="GDIIN" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="No" />
+          <State name="Yes" />
+        </States>
+      </Variable>
+      <Variable name="DrvSet" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Incorrect" />
+          <State name="Correct" />
+        </States>
+      </Variable>
+      <Variable name="DrvOK" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Corrupt" />
+          <State name="Reinstalled" />
+        </States>
+      </Variable>
+      <Variable name="GDIOUT" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="No" />
+          <State name="Yes" />
+        </States>
+      </Variable>
+      <Variable name="PrtSel" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="No" />
+          <State name="Yes" />
+        </States>
+      </Variable>
+      <Variable name="PrtDataOut" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="No" />
+          <State name="Yes" />
+        </States>
+      </Variable>
+      <Variable name="PrtPath" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Incorrect" />
+          <State name="Correct" />
+        </States>
+      </Variable>
+      <Variable name="NtwrkCnfg" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Incorrect" />
+          <State name="Correct" />
+        </States>
+      </Variable>
+      <Variable name="PTROFFLINE" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Offline" />
+          <State name="Online" />
+        </States>
+      </Variable>
+      <Variable name="NetOK" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="No" />
+          <State name="Yes" />
+        </States>
+      </Variable>
+      <Variable name="PrtCbl" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Loose" />
+          <State name="Connected" />
+        </States>
+      </Variable>
+      <Variable name="PrtPort" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="No" />
+          <State name="Yes" />
+        </States>
+      </Variable>
+      <Variable name="CblPrtHrdwrOK" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Not_Operational" />
+          <State name="Operational" />
+        </States>
+      </Variable>
+      <Variable name="LclOK" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="No" />
+          <State name="Yes" />
+        </States>
+      </Variable>
+      <Variable name="DSApplctn" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Windows" />
+          <State name="DOS" />
+        </States>
+      </Variable>
+      <Variable name="PrtMpTPth" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Incorrect" />
+          <State name="Correct" />
+        </States>
+      </Variable>
+      <Variable name="DS_NTOK" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="No" />
+          <State name="Yes" />
+        </States>
+      </Variable>
+      <Variable name="DS_LCLOK" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="No" />
+          <State name="Yes" />
+        </States>
+      </Variable>
+      <Variable name="PC2PRT" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="No" />
+          <State name="Yes" />
+        </States>
+      </Variable>
+      <Variable name="PrtMem" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Less_than_2Mb" />
+          <State name="Greater_than_2_Mb" />
+        </States>
+      </Variable>
+      <Variable name="PrtTimeOut" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Too_Short" />
+          <State name="Long_Enough" />
+        </States>
+      </Variable>
+      <Variable name="FllCrrptdBffr" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Full_or_Corrupt" />
+          <State name="Intact__not_Corrupt_" />
+        </States>
+      </Variable>
+      <Variable name="TnrSpply" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Low" />
+          <State name="Adequate" />
+        </States>
+      </Variable>
+      <Variable name="PrtData" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="No" />
+          <State name="Yes" />
+        </States>
+      </Variable>
+      <Variable name="Problem1" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="No_Output" />
+          <State name="Normal_Output" />
+        </States>
+      </Variable>
+      <Variable name="AppDtGnTm" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Too_Long" />
+          <State name="Fast_Enough" />
+        </States>
+      </Variable>
+      <Variable name="PrntPrcssTm" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Too_Long" />
+          <State name="Fast_Enough" />
+        </States>
+      </Variable>
+      <Variable name="DeskPrntSpd" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Too_Slow" />
+          <State name="OK" />
+        </States>
+      </Variable>
+      <Variable name="PgOrnttnOK" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Incorrect" />
+          <State name="Correct" />
+        </States>
+      </Variable>
+      <Variable name="PrntngArOK" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Incorrect" />
+          <State name="Correct" />
+        </States>
+      </Variable>
+      <Variable name="ScrnFntNtPrntrFnt" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="No" />
+          <State name="Yes" />
+        </States>
+      </Variable>
+      <Variable name="CmpltPgPrntd" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="No" />
+          <State name="Yes" />
+        </States>
+      </Variable>
+      <Variable name="GrphcsRltdDrvrSttngs" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Incorrect" />
+          <State name="Correct" />
+        </States>
+      </Variable>
+      <Variable name="EPSGrphc" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Yes____EPS_" />
+          <State name="No____TIF___WMF___BMP_" />
+        </States>
+      </Variable>
+      <Variable name="NnPSGrphc" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="No" />
+          <State name="Yes" />
+        </States>
+      </Variable>
+      <Variable name="PrtPScript" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="No" />
+          <State name="Yes" />
+        </States>
+      </Variable>
+      <Variable name="PSGRAPHIC" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="No" />
+          <State name="Yes" />
+        </States>
+      </Variable>
+      <Variable name="Problem4" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Yes" />
+          <State name="No" />
+        </States>
+      </Variable>
+      <Variable name="TrTypFnts" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="No" />
+          <State name="Yes" />
+        </States>
+      </Variable>
+      <Variable name="FntInstlltn" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Faulty" />
+          <State name="Verified" />
+        </States>
+      </Variable>
+      <Variable name="PrntrAccptsTrtyp" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="No" />
+          <State name="Yes" />
+        </States>
+      </Variable>
+      <Variable name="TTOK" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="No" />
+          <State name="Yes" />
+        </States>
+      </Variable>
+      <Variable name="NnTTOK" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="No" />
+          <State name="Yes" />
+        </States>
+      </Variable>
+      <Variable name="Problem5" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Yes" />
+          <State name="No" />
+        </States>
+      </Variable>
+      <Variable name="LclGrbld" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="No" />
+          <State name="Yes" />
+        </States>
+      </Variable>
+      <Variable name="NtGrbld" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="No" />
+          <State name="Yes" />
+        </States>
+      </Variable>
+      <Variable name="GrbldOtpt" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Yes" />
+          <State name="No" />
+        </States>
+      </Variable>
+      <Variable name="HrglssDrtnAftrPrnt" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Too_Long" />
+          <State name="Fast_Enough" />
+        </States>
+      </Variable>
+      <Variable name="REPEAT" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="No__Different_Each_Time_" />
+          <State name="Yes__Always_the_Same_" />
+        </States>
+      </Variable>
+      <Variable name="AvlblVrtlMmry" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Inadequate____1_Mb_" />
+          <State name="Adequate____1Mb_" />
+        </States>
+      </Variable>
+      <Variable name="PSERRMEM" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Low_Memory" />
+          <State name="No_Error" />
+        </States>
+      </Variable>
+      <Variable name="TstpsTxt" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="x_1_Mb_Available_VM2" />
+          <State name="x_1_Mb_Available_VM" />
+        </States>
+      </Variable>
+      <Variable name="GrbldPS" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Yes" />
+          <State name="No" />
+        </States>
+      </Variable>
+      <Variable name="IncmpltPS" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="No" />
+          <State name="Yes" />
+        </States>
+      </Variable>
+      <Variable name="PrtFile" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="No" />
+          <State name="Yes" />
+        </States>
+      </Variable>
+      <Variable name="PrtIcon" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Grayed_Out" />
+          <State name="Normal" />
+        </States>
+      </Variable>
+      <Variable name="Problem6" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Yes" />
+          <State name="No" />
+        </States>
+      </Variable>
+      <Variable name="Problem3" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Yes" />
+          <State name="No" />
+        </States>
+      </Variable>
+      <Variable name="PrtQueue" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Long" />
+          <State name="Short" />
+        </States>
+      </Variable>
+      <Variable name="NtSpd" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Slow" />
+          <State name="OK" />
+        </States>
+      </Variable>
+      <Variable name="Problem2" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Too_Long" />
+          <State name="OK" />
+        </States>
+      </Variable>
+      <Variable name="PrtStatPaper" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Jam__Out__Bin_Full" />
+          <State name="No_Error" />
+        </States>
+      </Variable>
+      <Variable name="PrtStatToner" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Low__None" />
+          <State name="No_Error" />
+        </States>
+      </Variable>
+      <Variable name="PrtStatMem" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Out_of_Memory" />
+          <State name="No_Error" />
+        </States>
+      </Variable>
+      <Variable name="PrtStatOff" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="OFFLINE__OFF" />
+          <State name="No_Error" />
+        </States>
+      </Variable>
+    </Variables>
+    <Links>
+      <Link directed="true">
+        <Variable name="AppOK" />
+        <Variable name="AppData" />
+      </Link>
+      <Link directed="true">
+        <Variable name="DataFile" />
+        <Variable name="AppData" />
+      </Link>
+      <Link directed="true">
+        <Variable name="AppData" />
+        <Variable name="DS_LCLOK" />
+      </Link>
+      <Link directed="true">
+        <Variable name="AppData" />
+        <Variable name="DS_NTOK" />
+      </Link>
+      <Link directed="true">
+        <Variable name="AppData" />
+        <Variable name="EMFOK" />
+      </Link>
+      <Link directed="true">
+        <Variable name="AppData" />
+        <Variable name="GDIIN" />
+      </Link>
+      <Link directed="true">
+        <Variable name="AppData" />
+        <Variable name="LclGrbld" />
+      </Link>
+      <Link directed="true">
+        <Variable name="AppData" />
+        <Variable name="NtGrbld" />
+      </Link>
+      <Link directed="true">
+        <Variable name="DskLocal" />
+        <Variable name="EMFOK" />
+      </Link>
+      <Link directed="true">
+        <Variable name="PrtSpool" />
+        <Variable name="AppDtGnTm" />
+      </Link>
+      <Link directed="true">
+        <Variable name="PrtSpool" />
+        <Variable name="GDIIN" />
+      </Link>
+      <Link directed="true">
+        <Variable name="PrtSpool" />
+        <Variable name="PrntPrcssTm" />
+      </Link>
+      <Link directed="true">
+        <Variable name="PrtOn" />
+        <Variable name="PrtData" />
+      </Link>
+      <Link directed="true">
+        <Variable name="PrtOn" />
+        <Variable name="PrtStatOff" />
+      </Link>
+      <Link directed="true">
+        <Variable name="PrtPaper" />
+        <Variable name="PrtData" />
+      </Link>
+      <Link directed="true">
+        <Variable name="PrtPaper" />
+        <Variable name="PrtStatPaper" />
+      </Link>
+      <Link directed="true">
+        <Variable name="NetPrint" />
+        <Variable name="GrbldOtpt" />
+      </Link>
+      <Link directed="true">
+        <Variable name="NetPrint" />
+        <Variable name="PC2PRT" />
+      </Link>
+      <Link directed="true">
+        <Variable name="NetPrint" />
+        <Variable name="Problem2" />
+      </Link>
+      <Link directed="true">
+        <Variable name="PrtDriver" />
+        <Variable name="GDIOUT" />
+      </Link>
+      <Link directed="true">
+        <Variable name="PrtDriver" />
+        <Variable name="LclGrbld" />
+      </Link>
+      <Link directed="true">
+        <Variable name="PrtDriver" />
+        <Variable name="NtGrbld" />
+      </Link>
+      <Link directed="true">
+        <Variable name="PrtThread" />
+        <Variable name="EMFOK" />
+      </Link>
+      <Link directed="true">
+        <Variable name="EMFOK" />
+        <Variable name="GDIIN" />
+      </Link>
+      <Link directed="true">
+        <Variable name="GDIIN" />
+        <Variable name="GDIOUT" />
+      </Link>
+      <Link directed="true">
+        <Variable name="DrvSet" />
+        <Variable name="GDIOUT" />
+      </Link>
+      <Link directed="true">
+        <Variable name="DrvOK" />
+        <Variable name="GDIOUT" />
+      </Link>
+      <Link directed="true">
+        <Variable name="GDIOUT" />
+        <Variable name="PrtDataOut" />
+      </Link>
+      <Link directed="true">
+        <Variable name="PrtSel" />
+        <Variable name="PrtDataOut" />
+      </Link>
+      <Link directed="true">
+        <Variable name="PrtDataOut" />
+        <Variable name="PC2PRT" />
+      </Link>
+      <Link directed="true">
+        <Variable name="PrtDataOut" />
+        <Variable name="PrtFile" />
+      </Link>
+      <Link directed="true">
+        <Variable name="PrtPath" />
+        <Variable name="DS_NTOK" />
+      </Link>
+      <Link directed="true">
+        <Variable name="PrtPath" />
+        <Variable name="NetOK" />
+      </Link>
+      <Link directed="true">
+        <Variable name="NtwrkCnfg" />
+        <Variable name="DS_NTOK" />
+      </Link>
+      <Link directed="true">
+        <Variable name="NtwrkCnfg" />
+        <Variable name="NetOK" />
+      </Link>
+      <Link directed="true">
+        <Variable name="NtwrkCnfg" />
+        <Variable name="NtGrbld" />
+      </Link>
+      <Link directed="true">
+        <Variable name="NtwrkCnfg" />
+        <Variable name="NtSpd" />
+      </Link>
+      <Link directed="true">
+        <Variable name="NtwrkCnfg" />
+        <Variable name="PrtIcon" />
+      </Link>
+      <Link directed="true">
+        <Variable name="NtwrkCnfg" />
+        <Variable name="REPEAT" />
+      </Link>
+      <Link directed="true">
+        <Variable name="PTROFFLINE" />
+        <Variable name="DS_NTOK" />
+      </Link>
+      <Link directed="true">
+        <Variable name="PTROFFLINE" />
+        <Variable name="NetOK" />
+      </Link>
+      <Link directed="true">
+        <Variable name="PTROFFLINE" />
+        <Variable name="PrtIcon" />
+      </Link>
+      <Link directed="true">
+        <Variable name="NetOK" />
+        <Variable name="PC2PRT" />
+      </Link>
+      <Link directed="true">
+        <Variable name="PrtCbl" />
+        <Variable name="DS_LCLOK" />
+      </Link>
+      <Link directed="true">
+        <Variable name="PrtCbl" />
+        <Variable name="LclOK" />
+      </Link>
+      <Link directed="true">
+        <Variable name="PrtPort" />
+        <Variable name="DS_LCLOK" />
+      </Link>
+      <Link directed="true">
+        <Variable name="PrtPort" />
+        <Variable name="LclOK" />
+      </Link>
+      <Link directed="true">
+        <Variable name="CblPrtHrdwrOK" />
+        <Variable name="DS_LCLOK" />
+      </Link>
+      <Link directed="true">
+        <Variable name="CblPrtHrdwrOK" />
+        <Variable name="LclGrbld" />
+      </Link>
+      <Link directed="true">
+        <Variable name="CblPrtHrdwrOK" />
+        <Variable name="LclOK" />
+      </Link>
+      <Link directed="true">
+        <Variable name="CblPrtHrdwrOK" />
+        <Variable name="REPEAT" />
+      </Link>
+      <Link directed="true">
+        <Variable name="LclOK" />
+        <Variable name="PC2PRT" />
+      </Link>
+      <Link directed="true">
+        <Variable name="DSApplctn" />
+        <Variable name="PC2PRT" />
+      </Link>
+      <Link directed="true">
+        <Variable name="PrtMpTPth" />
+        <Variable name="DS_NTOK" />
+      </Link>
+      <Link directed="true">
+        <Variable name="DS_NTOK" />
+        <Variable name="PC2PRT" />
+      </Link>
+      <Link directed="true">
+        <Variable name="DS_LCLOK" />
+        <Variable name="PC2PRT" />
+      </Link>
+      <Link directed="true">
+        <Variable name="PC2PRT" />
+        <Variable name="PrtData" />
+      </Link>
+      <Link directed="true">
+        <Variable name="PrtMem" />
+        <Variable name="CmpltPgPrntd" />
+      </Link>
+      <Link directed="true">
+        <Variable name="PrtMem" />
+        <Variable name="DeskPrntSpd" />
+      </Link>
+      <Link directed="true">
+        <Variable name="PrtMem" />
+        <Variable name="LclGrbld" />
+      </Link>
+      <Link directed="true">
+        <Variable name="PrtMem" />
+        <Variable name="NnPSGrphc" />
+      </Link>
+      <Link directed="true">
+        <Variable name="PrtMem" />
+        <Variable name="NnTTOK" />
+      </Link>
+      <Link directed="true">
+        <Variable name="PrtMem" />
+        <Variable name="NtGrbld" />
+      </Link>
+      <Link directed="true">
+        <Variable name="PrtMem" />
+        <Variable name="PSGRAPHIC" />
+      </Link>
+      <Link directed="true">
+        <Variable name="PrtMem" />
+        <Variable name="PrtData" />
+      </Link>
+      <Link directed="true">
+        <Variable name="PrtMem" />
+        <Variable name="PrtStatMem" />
+      </Link>
+      <Link directed="true">
+        <Variable name="PrtMem" />
+        <Variable name="TTOK" />
+      </Link>
+      <Link directed="true">
+        <Variable name="PrtTimeOut" />
+        <Variable name="PrtData" />
+      </Link>
+      <Link directed="true">
+        <Variable name="FllCrrptdBffr" />
+        <Variable name="PrtData" />
+      </Link>
+      <Link directed="true">
+        <Variable name="TnrSpply" />
+        <Variable name="PrtData" />
+      </Link>
+      <Link directed="true">
+        <Variable name="TnrSpply" />
+        <Variable name="PrtStatToner" />
+      </Link>
+      <Link directed="true">
+        <Variable name="PrtData" />
+        <Variable name="Problem1" />
+      </Link>
+      <Link directed="true">
+        <Variable name="AppDtGnTm" />
+        <Variable name="DeskPrntSpd" />
+      </Link>
+      <Link directed="true">
+        <Variable name="AppDtGnTm" />
+        <Variable name="HrglssDrtnAftrPrnt" />
+      </Link>
+      <Link directed="true">
+        <Variable name="PrntPrcssTm" />
+        <Variable name="DeskPrntSpd" />
+      </Link>
+      <Link directed="true">
+        <Variable name="DeskPrntSpd" />
+        <Variable name="NtSpd" />
+      </Link>
+      <Link directed="true">
+        <Variable name="DeskPrntSpd" />
+        <Variable name="Problem2" />
+      </Link>
+      <Link directed="true">
+        <Variable name="PgOrnttnOK" />
+        <Variable name="CmpltPgPrntd" />
+      </Link>
+      <Link directed="true">
+        <Variable name="PrntngArOK" />
+        <Variable name="CmpltPgPrntd" />
+      </Link>
+      <Link directed="true">
+        <Variable name="ScrnFntNtPrntrFnt" />
+        <Variable name="NnTTOK" />
+      </Link>
+      <Link directed="true">
+        <Variable name="CmpltPgPrntd" />
+        <Variable name="IncmpltPS" />
+      </Link>
+      <Link directed="true">
+        <Variable name="CmpltPgPrntd" />
+        <Variable name="Problem3" />
+      </Link>
+      <Link directed="true">
+        <Variable name="GrphcsRltdDrvrSttngs" />
+        <Variable name="NnPSGrphc" />
+      </Link>
+      <Link directed="true">
+        <Variable name="GrphcsRltdDrvrSttngs" />
+        <Variable name="PSGRAPHIC" />
+      </Link>
+      <Link directed="true">
+        <Variable name="EPSGrphc" />
+        <Variable name="NnPSGrphc" />
+      </Link>
+      <Link directed="true">
+        <Variable name="EPSGrphc" />
+        <Variable name="PSGRAPHIC" />
+      </Link>
+      <Link directed="true">
+        <Variable name="NnPSGrphc" />
+        <Variable name="Problem4" />
+      </Link>
+      <Link directed="true">
+        <Variable name="PrtPScript" />
+        <Variable name="AvlblVrtlMmry" />
+      </Link>
+      <Link directed="true">
+        <Variable name="PrtPScript" />
+        <Variable name="PSERRMEM" />
+      </Link>
+      <Link directed="true">
+        <Variable name="PrtPScript" />
+        <Variable name="Problem3" />
+      </Link>
+      <Link directed="true">
+        <Variable name="PrtPScript" />
+        <Variable name="Problem4" />
+      </Link>
+      <Link directed="true">
+        <Variable name="PrtPScript" />
+        <Variable name="Problem6" />
+      </Link>
+      <Link directed="true">
+        <Variable name="PrtPScript" />
+        <Variable name="TstpsTxt" />
+      </Link>
+      <Link directed="true">
+        <Variable name="PSGRAPHIC" />
+        <Variable name="Problem4" />
+      </Link>
+      <Link directed="true">
+        <Variable name="TrTypFnts" />
+        <Variable name="Problem5" />
+      </Link>
+      <Link directed="true">
+        <Variable name="FntInstlltn" />
+        <Variable name="NnTTOK" />
+      </Link>
+      <Link directed="true">
+        <Variable name="FntInstlltn" />
+        <Variable name="TTOK" />
+      </Link>
+      <Link directed="true">
+        <Variable name="PrntrAccptsTrtyp" />
+        <Variable name="TTOK" />
+      </Link>
+      <Link directed="true">
+        <Variable name="TTOK" />
+        <Variable name="Problem5" />
+      </Link>
+      <Link directed="true">
+        <Variable name="NnTTOK" />
+        <Variable name="Problem5" />
+      </Link>
+      <Link directed="true">
+        <Variable name="LclGrbld" />
+        <Variable name="GrbldOtpt" />
+      </Link>
+      <Link directed="true">
+        <Variable name="NtGrbld" />
+        <Variable name="GrbldOtpt" />
+      </Link>
+      <Link directed="true">
+        <Variable name="GrbldOtpt" />
+        <Variable name="GrbldPS" />
+      </Link>
+      <Link directed="true">
+        <Variable name="GrbldOtpt" />
+        <Variable name="Problem6" />
+      </Link>
+      <Link directed="true">
+        <Variable name="AvlblVrtlMmry" />
+        <Variable name="GrbldPS" />
+      </Link>
+      <Link directed="true">
+        <Variable name="AvlblVrtlMmry" />
+        <Variable name="IncmpltPS" />
+      </Link>
+      <Link directed="true">
+        <Variable name="AvlblVrtlMmry" />
+        <Variable name="PSERRMEM" />
+      </Link>
+      <Link directed="true">
+        <Variable name="AvlblVrtlMmry" />
+        <Variable name="TstpsTxt" />
+      </Link>
+      <Link directed="true">
+        <Variable name="GrbldPS" />
+        <Variable name="Problem6" />
+      </Link>
+      <Link directed="true">
+        <Variable name="IncmpltPS" />
+        <Variable name="Problem3" />
+      </Link>
+      <Link directed="true">
+        <Variable name="PrtQueue" />
+        <Variable name="NtSpd" />
+      </Link>
+      <Link directed="true">
+        <Variable name="NtSpd" />
+        <Variable name="Problem2" />
+      </Link>
+    </Links>
+    <Potentials>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="AppOK" />
+        </Variables>
+        <Values>0.005 0.995</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="DataFile" />
+        </Variables>
+        <Values>0.005 0.995</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="AppData" />
+          <Variable name="AppOK" />
+          <Variable name="DataFile" />
+        </Variables>
+        <Values>0.5 0.5 1.0 0.0 1.0 0.0 1.0E-4 0.9999</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="DskLocal" />
+        </Variables>
+        <Values>0.03 0.97</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="PrtSpool" />
+        </Variables>
+        <Values>0.05 0.95</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="PrtOn" />
+        </Variables>
+        <Values>0.1 0.9</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="PrtPaper" />
+        </Variables>
+        <Values>0.02 0.98</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="NetPrint" />
+        </Variables>
+        <Values>0.2 0.8</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="PrtDriver" />
+        </Variables>
+        <Values>0.1 0.9</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="PrtThread" />
+        </Variables>
+        <Values>1.0E-4 0.9999</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="EMFOK" />
+          <Variable name="AppData" />
+          <Variable name="DskLocal" />
+          <Variable name="PrtThread" />
+        </Variables>
+        <Values>0.5 0.5 0.5 0.5 0.5 0.5 0.95 0.05 0.5 0.5 1.0 0.0 0.9 0.1 0.01 0.99</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="GDIIN" />
+          <Variable name="AppData" />
+          <Variable name="PrtSpool" />
+          <Variable name="EMFOK" />
+        </Variables>
+        <Values>1.0 0.0 0.0 1.0 1.0 0.0 1.0 0.0 1.0 0.0 0.0 1.0 1.0 0.0 0.0 1.0</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="DrvSet" />
+        </Variables>
+        <Values>0.01 0.99</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="DrvOK" />
+        </Variables>
+        <Values>0.01 0.99</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="GDIOUT" />
+          <Variable name="PrtDriver" />
+          <Variable name="GDIIN" />
+          <Variable name="DrvSet" />
+          <Variable name="DrvOK" />
+        </Variables>
+        <Values>0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.8 0.2 0.5 0.5 0.5 0.5 0.5 0.5 0.1 0.9 0.5 0.5 0.9 0.1 0.9 0.1 0.01 0.99</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="PrtSel" />
+        </Variables>
+        <Values>0.01 0.99</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="PrtDataOut" />
+          <Variable name="GDIOUT" />
+          <Variable name="PrtSel" />
+        </Variables>
+        <Values>0.5 0.5 1.0 0.0 1.0 0.0 0.01 0.99</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="PrtPath" />
+        </Variables>
+        <Values>0.03 0.97</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="NtwrkCnfg" />
+        </Variables>
+        <Values>0.02 0.98</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="PTROFFLINE" />
+        </Variables>
+        <Values>0.3 0.7</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="NetOK" />
+          <Variable name="PrtPath" />
+          <Variable name="NtwrkCnfg" />
+          <Variable name="PTROFFLINE" />
+        </Variables>
+        <Values>0.5 0.5 0.5 0.5 0.5 0.5 1.0 0.0 0.5 0.5 0.9 0.1 1.0 0.0 0.01 0.99</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="PrtCbl" />
+        </Variables>
+        <Values>0.02 0.98</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="PrtPort" />
+        </Variables>
+        <Values>0.01 0.99</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="CblPrtHrdwrOK" />
+        </Variables>
+        <Values>0.01 0.99</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="LclOK" />
+          <Variable name="PrtCbl" />
+          <Variable name="PrtPort" />
+          <Variable name="CblPrtHrdwrOK" />
+        </Variables>
+        <Values>0.5 0.5 0.5 0.5 0.5 0.5 0.99 0.01 0.5 0.5 1.0 0.0 1.0 0.0 0.001 0.999</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="DSApplctn" />
+        </Variables>
+        <Values>0.85 0.15</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="PrtMpTPth" />
+        </Variables>
+        <Values>0.2 0.8</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="DS_NTOK" />
+          <Variable name="AppData" />
+          <Variable name="PrtPath" />
+          <Variable name="PrtMpTPth" />
+          <Variable name="NtwrkCnfg" />
+          <Variable name="PTROFFLINE" />
+        </Variables>
+        <Values>0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 1.0 0.0 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.9 0.1 0.5 0.5 0.5 0.5 0.5 0.5 1.0 0.0 0.5 0.5 1.0 0.0 0.8 0.2 0.01 0.99</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="DS_LCLOK" />
+          <Variable name="AppData" />
+          <Variable name="PrtCbl" />
+          <Variable name="PrtPort" />
+          <Variable name="CblPrtHrdwrOK" />
+        </Variables>
+        <Values>0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.9 0.1 0.5 0.5 0.5 0.5 0.5 0.5 1.0 0.0 0.5 0.5 1.0 0.0 0.9 0.1 0.0 1.0</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="PC2PRT" />
+          <Variable name="NetPrint" />
+          <Variable name="PrtDataOut" />
+          <Variable name="NetOK" />
+          <Variable name="LclOK" />
+          <Variable name="DSApplctn" />
+          <Variable name="DS_NTOK" />
+          <Variable name="DS_LCLOK" />
+        </Variables>
+        <Values>1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 0.0 1.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 0.0 1.0 1.0 0.0 1.0 0.0 0.0 1.0 0.0 1.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 0.0 1.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 0.0 1.0 1.0 0.0 1.0 0.0 0.0 1.0 0.0 1.0 0.0 1.0 1.0 0.0 0.0 1.0 1.0 0.0 0.0 1.0 1.0 0.0 0.0 1.0 1.0 0.0 0.0 1.0 1.0 0.0 0.0 1.0 1.0 0.0 0.0 1.0 1.0 0.0 0.0 1.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 0.0 1.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 0.0 1.0 1.0 0.0 1.0 0.0 0.0 1.0 0.0 1.0 1.0 0.0 0.0 1.0 1.0 0.0 0.0 1.0 1.0 0.0 0.0 1.0 1.0 0.0 0.0 1.0 1.0 0.0 0.0 1.0 1.0 0.0 0.0 1.0 1.0 0.0 0.0 1.0 1.0 0.0 0.0 1.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 0.0 1.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 0.0 1.0 1.0 0.0 1.0 0.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="PrtMem" />
+        </Variables>
+        <Values>0.05 0.95</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="PrtTimeOut" />
+        </Variables>
+        <Values>0.06 0.94</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="FllCrrptdBffr" />
+        </Variables>
+        <Values>0.15 0.85</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="TnrSpply" />
+        </Variables>
+        <Values>0.005 0.995</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="PrtData" />
+          <Variable name="PrtOn" />
+          <Variable name="PrtPaper" />
+          <Variable name="PC2PRT" />
+          <Variable name="PrtMem" />
+          <Variable name="PrtTimeOut" />
+          <Variable name="FllCrrptdBffr" />
+          <Variable name="TnrSpply" />
+        </Variables>
+        <Values>0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.99 0.01 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.98 0.02 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 1.0 0.0 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.9 0.1 0.5 0.5 0.5 0.5 0.5 0.5 1.0 0.0 0.5 0.5 1.0 0.0 1.0 0.0 0.01 0.99</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="Problem1" />
+          <Variable name="PrtData" />
+        </Variables>
+        <Values>1.0 0.0 0.0 1.0</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="AppDtGnTm" />
+          <Variable name="PrtSpool" />
+        </Variables>
+        <Values>0.00999999 0.99000001 0.0 1.0</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="PrntPrcssTm" />
+          <Variable name="PrtSpool" />
+        </Variables>
+        <Values>0.0 1.0 0.00999999 0.99000001</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="DeskPrntSpd" />
+          <Variable name="PrtMem" />
+          <Variable name="AppDtGnTm" />
+          <Variable name="PrntPrcssTm" />
+        </Variables>
+        <Values>0.5 0.5 0.5 0.5 0.5 0.5 0.99900001 9.9999E-4 0.5 0.5 0.99900001 9.9999E-4 0.75 0.25 9.9999E-4 0.99900001</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="PgOrnttnOK" />
+        </Variables>
+        <Values>0.05 0.95</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="PrntngArOK" />
+        </Variables>
+        <Values>0.02 0.98</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="ScrnFntNtPrntrFnt" />
+        </Variables>
+        <Values>0.05 0.95</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="CmpltPgPrntd" />
+          <Variable name="PrtMem" />
+          <Variable name="PgOrnttnOK" />
+          <Variable name="PrntngArOK" />
+        </Variables>
+        <Values>0.5 0.5 0.5 0.5 0.5 0.5 0.9 0.1 0.5 0.5 0.99000001 0.00999999 0.7 0.3 0.01 0.99</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="GrphcsRltdDrvrSttngs" />
+        </Variables>
+        <Values>0.05 0.95</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="EPSGrphc" />
+        </Variables>
+        <Values>0.01 0.99</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="NnPSGrphc" />
+          <Variable name="PrtMem" />
+          <Variable name="GrphcsRltdDrvrSttngs" />
+          <Variable name="EPSGrphc" />
+        </Variables>
+        <Values>0.5 0.5 0.5 0.5 0.5 0.5 1.0 0.0 0.5 0.5 0.9 0.1 0.75 0.25 0.001 0.999</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="PrtPScript" />
+        </Variables>
+        <Values>0.6 0.4</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="PSGRAPHIC" />
+          <Variable name="PrtMem" />
+          <Variable name="GrphcsRltdDrvrSttngs" />
+          <Variable name="EPSGrphc" />
+        </Variables>
+        <Values>0.5 0.5 0.5 0.5 0.5 0.5 0.0 1.0 0.5 0.5 0.9 0.1 0.75 0.25 0.001 0.999</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="Problem4" />
+          <Variable name="NnPSGrphc" />
+          <Variable name="PrtPScript" />
+          <Variable name="PSGRAPHIC" />
+        </Variables>
+        <Values>0.0 1.0 1.0 0.0 0.0 1.0 0.0 1.0 0.0 1.0 1.0 0.0 1.0 0.0 1.0 0.0</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="TrTypFnts" />
+        </Variables>
+        <Values>0.1 0.9</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="FntInstlltn" />
+        </Variables>
+        <Values>0.02 0.98</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="PrntrAccptsTrtyp" />
+        </Variables>
+        <Values>0.1 0.9</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="TTOK" />
+          <Variable name="PrtMem" />
+          <Variable name="FntInstlltn" />
+          <Variable name="PrntrAccptsTrtyp" />
+        </Variables>
+        <Values>0.5 0.5 0.5 0.5 0.5 0.5 1.0 0.0 0.5 0.5 0.9 0.1 0.5 0.5 0.00999999 0.99000001</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="NnTTOK" />
+          <Variable name="PrtMem" />
+          <Variable name="ScrnFntNtPrntrFnt" />
+          <Variable name="FntInstlltn" />
+        </Variables>
+        <Values>0.5 0.5 0.5 0.5 0.5 0.5 0.9 0.1 0.5 0.5 0.9 0.1 0.5 0.5 0.00999999 0.99000001</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="Problem5" />
+          <Variable name="TrTypFnts" />
+          <Variable name="TTOK" />
+          <Variable name="NnTTOK" />
+        </Variables>
+        <Values>0.0 1.0 0.0 1.0 0.0 1.0 1.0 0.0 1.0 0.0 0.0 1.0 1.0 0.0 1.0 0.0</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="LclGrbld" />
+          <Variable name="AppData" />
+          <Variable name="PrtDriver" />
+          <Variable name="PrtMem" />
+          <Variable name="CblPrtHrdwrOK" />
+        </Variables>
+        <Values>0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.9 0.1 0.5 0.5 0.5 0.5 0.5 0.5 0.8 0.2 0.5 0.5 0.6 0.4 0.8 0.2 0.0 1.0</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="NtGrbld" />
+          <Variable name="AppData" />
+          <Variable name="PrtDriver" />
+          <Variable name="PrtMem" />
+          <Variable name="NtwrkCnfg" />
+        </Variables>
+        <Values>0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.6 0.4 0.5 0.5 0.5 0.5 0.5 0.5 0.8 0.2 0.5 0.5 0.6 0.4 0.7 0.3 0.0 1.0</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="GrbldOtpt" />
+          <Variable name="NetPrint" />
+          <Variable name="LclGrbld" />
+          <Variable name="NtGrbld" />
+        </Variables>
+        <Values>1.0 0.0 1.0 0.0 1.0 0.0 0.0 1.0 0.0 1.0 1.0 0.0 0.0 1.0 0.0 1.0</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="HrglssDrtnAftrPrnt" />
+          <Variable name="AppDtGnTm" />
+        </Variables>
+        <Values>0.9 0.1 0.01 0.99</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="REPEAT" />
+          <Variable name="CblPrtHrdwrOK" />
+          <Variable name="NtwrkCnfg" />
+        </Variables>
+        <Values>0.5 0.5 0.5 0.5 0.5 0.5 0.0 1.0</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="AvlblVrtlMmry" />
+          <Variable name="PrtPScript" />
+        </Variables>
+        <Values>0.0 1.0 0.02 0.98</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="PSERRMEM" />
+          <Variable name="PrtPScript" />
+          <Variable name="AvlblVrtlMmry" />
+        </Variables>
+        <Values>0.0 1.0 0.95 0.05 0.0 1.0 0.0 1.0</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="TstpsTxt" />
+          <Variable name="PrtPScript" />
+          <Variable name="AvlblVrtlMmry" />
+        </Variables>
+        <Values>0.0 1.0 0.99900001 9.9999E-4 0.0 1.0 9.9999E-4 0.99900001</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="GrbldPS" />
+          <Variable name="GrbldOtpt" />
+          <Variable name="AvlblVrtlMmry" />
+        </Variables>
+        <Values>0.5 0.5 0.9 0.1 1.0 0.0 0.0 1.0</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="IncmpltPS" />
+          <Variable name="CmpltPgPrntd" />
+          <Variable name="AvlblVrtlMmry" />
+        </Variables>
+        <Values>0.5 0.5 0.7 0.3 1.0 0.0 0.0 1.0</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="PrtFile" />
+          <Variable name="PrtDataOut" />
+        </Variables>
+        <Values>0.8 0.2 0.2 0.8</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="PrtIcon" />
+          <Variable name="NtwrkCnfg" />
+          <Variable name="PTROFFLINE" />
+        </Variables>
+        <Values>0.5 0.5 0.3 0.7 0.75 0.25 1.0E-4 0.9999</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="Problem6" />
+          <Variable name="GrbldOtpt" />
+          <Variable name="PrtPScript" />
+          <Variable name="GrbldPS" />
+        </Variables>
+        <Values>1.0 0.0 0.0 1.0 1.0 0.0 1.0 0.0 1.0 0.0 0.0 1.0 0.0 1.0 0.0 1.0</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="Problem3" />
+          <Variable name="CmpltPgPrntd" />
+          <Variable name="PrtPScript" />
+          <Variable name="IncmpltPS" />
+        </Variables>
+        <Values>0.0 1.0 1.0 0.0 0.0 1.0 0.0 1.0 0.0 1.0 1.0 0.0 1.0 0.0 1.0 0.0</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="PrtQueue" />
+        </Variables>
+        <Values>0.01 0.99</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="NtSpd" />
+          <Variable name="DeskPrntSpd" />
+          <Variable name="NtwrkCnfg" />
+          <Variable name="PrtQueue" />
+        </Variables>
+        <Values>0.5 0.5 0.5 0.5 0.5 0.5 0.75 0.25 0.5 0.5 0.75 0.25 1.0 0.0 9.9999E-4 0.99900001</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="Problem2" />
+          <Variable name="NetPrint" />
+          <Variable name="DeskPrntSpd" />
+          <Variable name="NtSpd" />
+        </Variables>
+        <Values>1.0 0.0 1.0 0.0 1.0 0.0 0.0 1.0 0.0 1.0 1.0 0.0 0.0 1.0 0.0 1.0</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="PrtStatPaper" />
+          <Variable name="PrtPaper" />
+        </Variables>
+        <Values>0.99900001 9.9999E-4 9.9999E-4 0.99900001</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="PrtStatToner" />
+          <Variable name="TnrSpply" />
+        </Variables>
+        <Values>0.99900001 9.9999E-4 9.9999E-4 0.99900001</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="PrtStatMem" />
+          <Variable name="PrtMem" />
+        </Variables>
+        <Values>0.8 0.2 9.9999E-4 0.99900001</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="PrtStatOff" />
+          <Variable name="PrtOn" />
+        </Variables>
+        <Values>0.99000001 0.00999999 0.00999999 0.99000001</Values>
+      </Potential>
+    </Potentials>
+  </ProbNet>
+  <InferenceOptions>
+    <MulticriteriaOptions>
+      <SelectedAnalysisType>UNICRITERION</SelectedAnalysisType>
+      <Unicriterion>
+        <Scales>
+          <Scale Criterion="---" Value="1.0" />
+        </Scales>
+      </Unicriterion>
+      <CostEffectiveness>
+        <Scales>
+          <Scale Criterion="---" Value="1.0" />
+        </Scales>
+        <CE_Criteria>
+          <CE_Criterion Criterion="---" Value="Cost" />
+        </CE_Criteria>
+      </CostEffectiveness>
+    </MulticriteriaOptions>
+  </InferenceOptions>
+</ProbModelXML>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ProbModelXML formatVersion="0.2.0">
+  <ProbNet type="BayesianNetwork">
+    <DecisionCriteria>
+      <Criterion name="---" unit="---" />
+    </DecisionCriteria>
+    <Properties>
+      <Property name="hasElviraProperties" value="yes" />
+    </Properties>
+    <Variables>
+      <Variable name="V0" type="finiteStates" role="chance">
+        <Coordinates x="306" y="310" />
+        <States>
+          <State name="0" />
+          <State name="1" />
+        </States>
+      </Variable>
+      <Variable name="V1" type="finiteStates" role="chance">
+        <Coordinates x="306" y="435" />
+        <States>
+          <State name="1" />
+          <State name="0" />
+        </States>
+      </Variable>
+      <Variable name="V2" type="finiteStates" role="chance">
+        <Coordinates x="306" y="560" />
+        <States>
+          <State name="0" />
+          <State name="1" />
+        </States>
+      </Variable>
+      <Variable name="V3" type="finiteStates" role="chance">
+        <Coordinates x="306" y="183" />
+        <States>
+          <State name="0" />
+          <State name="1" />
+        </States>
+      </Variable>
+      <Variable name="V4" type="finiteStates" role="chance">
+        <Coordinates x="539" y="560" />
+        <States>
+          <State name="1" />
+          <State name="0" />
+        </States>
+      </Variable>
+      <Variable name="V5" type="finiteStates" role="chance">
+        <Coordinates x="772" y="560" />
+        <States>
+          <State name="0" />
+          <State name="1" />
+        </States>
+      </Variable>
+      <Variable name="V6" type="finiteStates" role="chance">
+        <Coordinates x="656" y="435" />
+        <States>
+          <State name="1" />
+          <State name="0" />
+        </States>
+      </Variable>
+      <Variable name="V7" type="finiteStates" role="chance">
+        <Coordinates x="656" y="310" />
+        <States>
+          <State name="0" />
+          <State name="1" />
+        </States>
+      </Variable>
+    </Variables>
+    <Links>
+      <Link directed="true">
+        <Variable name="V0" />
+        <Variable name="V1" />
+      </Link>
+      <Link directed="true">
+        <Variable name="V1" />
+        <Variable name="V2" />
+      </Link>
+      <Link directed="true">
+        <Variable name="V3" />
+        <Variable name="V0" />
+      </Link>
+      <Link directed="true">
+        <Variable name="V3" />
+        <Variable name="V4" />
+      </Link>
+      <Link directed="true">
+        <Variable name="V6" />
+        <Variable name="V5" />
+      </Link>
+      <Link directed="true">
+        <Variable name="V7" />
+        <Variable name="V6" />
+      </Link>
+    </Links>
+    <Potentials>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="V0" />
+          <Variable name="V3" />
+        </Variables>
+        <Values>0.3289835164835165 0.6710164835164835 0.9981751824817519 0.0018248175182481751</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="V1" />
+          <Variable name="V0" />
+        </Variables>
+        <Values>0.5175438596491229 0.4824561403508772 0.0010224948875255625 0.9989775051124744</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="V2" />
+          <Variable name="V1" />
+        </Variables>
+        <Values>0.9981203007518797 0.0018796992481203006 0.5251358695652174 0.4748641304347826</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="V3" />
+        </Variables>
+        <Values>0.7267732267732268 0.27322677322677325</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="V4" />
+          <Variable name="V3" />
+        </Variables>
+        <Values>0.5103021978021978 0.4896978021978022 0.0018248175182481751 0.9981751824817519</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="V5" />
+          <Variable name="V6" />
+        </Variables>
+        <Values>0.5264705882352941 0.47352941176470587 0.45223577235772355 0.5477642276422764</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="V6" />
+          <Variable name="V7" />
+        </Variables>
+        <Values>0.6989026063100137 0.3010973936899863 0.0018315018315018315 0.9981684981684982</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="V7" />
+        </Variables>
+        <Values>0.7277722277722277 0.2722277722277722</Values>
+      </Potential>
+    </Potentials>
+  </ProbNet>
+  <InferenceOptions>
+    <MulticriteriaOptions>
+      <SelectedAnalysisType>UNICRITERION</SelectedAnalysisType>
+      <Unicriterion>
+        <Scales>
+          <Scale Criterion="---" Value="1.0" />
+        </Scales>
+      </Unicriterion>
+      <CostEffectiveness>
+        <Scales>
+          <Scale Criterion="---" Value="1.0" />
+        </Scales>
+        <CE_Criteria>
+          <CE_Criterion Criterion="---" Value="Cost" />
+        </CE_Criteria>
+      </CostEffectiveness>
+    </MulticriteriaOptions>
+  </InferenceOptions>
+</ProbModelXML>

@@ -1,0 +1,890 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ProbModelXML formatVersion="0.2.0">
+  <ProbNet type="BayesianNetwork">
+    <DecisionCriteria>
+      <Criterion name="---" unit="---" />
+    </DecisionCriteria>
+    <Properties>
+      <Property name="Version" value="1.0" />
+      <Property name="KindOfGraph" value="directed" />
+      <Property name="VisualPrecision" value="0.0" />
+    </Properties>
+    <Variables>
+      <Variable name="HISTORY" type="finiteStates" role="chance">
+        <Coordinates x="429" y="533" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="FALSE" />
+          <State name="TRUE" />
+        </States>
+      </Variable>
+      <Variable name="CVP" type="finiteStates" role="chance">
+        <Coordinates x="1075" y="425" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="HIGH" />
+          <State name="NORMAL" />
+          <State name="LOW" />
+        </States>
+      </Variable>
+      <Variable name="PCWP" type="finiteStates" role="chance">
+        <Coordinates x="1046" y="577" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="HIGH" />
+          <State name="NORMAL" />
+          <State name="LOW" />
+        </States>
+      </Variable>
+      <Variable name="HYPOVOLEMIA" type="finiteStates" role="chance">
+        <Coordinates x="351" y="65" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="FALSE" />
+          <State name="TRUE" />
+        </States>
+      </Variable>
+      <Variable name="LVEDVOLUME" type="finiteStates" role="chance">
+        <Coordinates x="919" y="242" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="HIGH" />
+          <State name="NORMAL" />
+          <State name="LOW" />
+        </States>
+      </Variable>
+      <Variable name="LVFAILURE" type="finiteStates" role="chance">
+        <Coordinates x="784" y="60" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="FALSE" />
+          <State name="TRUE" />
+        </States>
+      </Variable>
+      <Variable name="STROKEVOLUME" type="finiteStates" role="chance">
+        <Coordinates x="719" y="746" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="HIGH" />
+          <State name="NORMAL" />
+          <State name="LOW" />
+        </States>
+      </Variable>
+      <Variable name="ERRLOWOUTPUT" type="finiteStates" role="chance">
+        <Coordinates x="154" y="840" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="FALSE" />
+          <State name="TRUE" />
+        </States>
+      </Variable>
+      <Variable name="HRBP" type="finiteStates" role="chance">
+        <Coordinates x="183" y="952" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="HIGH" />
+          <State name="NORMAL" />
+          <State name="LOW" />
+        </States>
+      </Variable>
+      <Variable name="HREKG" type="finiteStates" role="chance">
+        <Coordinates x="1470" y="703" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="HIGH" />
+          <State name="NORMAL" />
+          <State name="LOW" />
+        </States>
+      </Variable>
+      <Variable name="ERRCAUTER" type="finiteStates" role="chance">
+        <Coordinates x="1460" y="582" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="FALSE" />
+          <State name="TRUE" />
+        </States>
+      </Variable>
+      <Variable name="HRSAT" type="finiteStates" role="chance">
+        <Coordinates x="1346" y="971" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="HIGH" />
+          <State name="NORMAL" />
+          <State name="LOW" />
+        </States>
+      </Variable>
+      <Variable name="INSUFFANESTH" type="finiteStates" role="chance">
+        <Coordinates x="1260" y="54" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="FALSE" />
+          <State name="TRUE" />
+        </States>
+      </Variable>
+      <Variable name="ANAPHYLAXIS" type="finiteStates" role="chance">
+        <Coordinates x="1444" y="59" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="FALSE" />
+          <State name="TRUE" />
+        </States>
+      </Variable>
+      <Variable name="TPR" type="finiteStates" role="chance">
+        <Coordinates x="1289" y="246" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="HIGH" />
+          <State name="NORMAL" />
+          <State name="LOW" />
+        </States>
+      </Variable>
+      <Variable name="EXPCO2" type="finiteStates" role="chance">
+        <Coordinates x="1468" y="839" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="HIGH" />
+          <State name="NORMAL" />
+          <State name="LOW" />
+          <State name="ZERO" />
+        </States>
+      </Variable>
+      <Variable name="KINKEDTUBE" type="finiteStates" role="chance">
+        <Coordinates x="322" y="269" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="FALSE" />
+          <State name="TRUE" />
+        </States>
+      </Variable>
+      <Variable name="MINVOL" type="finiteStates" role="chance">
+        <Coordinates x="869" y="672" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="HIGH" />
+          <State name="NORMAL" />
+          <State name="LOW" />
+          <State name="ZERO" />
+        </States>
+      </Variable>
+      <Variable name="FIO2" type="finiteStates" role="chance">
+        <Coordinates x="999" y="60" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="NORMAL" />
+          <State name="LOW" />
+        </States>
+      </Variable>
+      <Variable name="PVSAT" type="finiteStates" role="chance">
+        <Coordinates x="1089" y="300" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="HIGH" />
+          <State name="NORMAL" />
+          <State name="LOW" />
+        </States>
+      </Variable>
+      <Variable name="SAO2" type="finiteStates" role="chance">
+        <Coordinates x="1304" y="468" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="HIGH" />
+          <State name="NORMAL" />
+          <State name="LOW" />
+        </States>
+      </Variable>
+      <Variable name="PAP" type="finiteStates" role="chance">
+        <Coordinates x="570" y="349" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="HIGH" />
+          <State name="NORMAL" />
+          <State name="LOW" />
+        </States>
+      </Variable>
+      <Variable name="PULMEMBOLUS" type="finiteStates" role="chance">
+        <Coordinates x="564" y="63" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="FALSE" />
+          <State name="TRUE" />
+        </States>
+      </Variable>
+      <Variable name="SHUNT" type="finiteStates" role="chance">
+        <Coordinates x="115" y="544" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="HIGH" />
+          <State name="NORMAL" />
+        </States>
+      </Variable>
+      <Variable name="INTUBATION" type="finiteStates" role="chance">
+        <Coordinates x="357" y="361" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="ONESIDED" />
+          <State name="ESOPHAGEAL" />
+          <State name="NORMAL" />
+        </States>
+      </Variable>
+      <Variable name="PRESS" type="finiteStates" role="chance">
+        <Coordinates x="229" y="664" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="HIGH" />
+          <State name="NORMAL" />
+          <State name="LOW" />
+          <State name="ZERO" />
+        </States>
+      </Variable>
+      <Variable name="DISCONNECT" type="finiteStates" role="chance">
+        <Coordinates x="1127" y="126" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="FALSE" />
+          <State name="TRUE" />
+        </States>
+      </Variable>
+      <Variable name="MINVOLSET" type="finiteStates" role="chance">
+        <Coordinates x="120" y="58" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="HIGH" />
+          <State name="NORMAL" />
+          <State name="LOW" />
+        </States>
+      </Variable>
+      <Variable name="VENTMACH" type="finiteStates" role="chance">
+        <Coordinates x="166" y="181" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="HIGH" />
+          <State name="NORMAL" />
+          <State name="LOW" />
+          <State name="ZERO" />
+        </States>
+      </Variable>
+      <Variable name="VENTTUBE" type="finiteStates" role="chance">
+        <Coordinates x="710" y="272" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="HIGH" />
+          <State name="NORMAL" />
+          <State name="LOW" />
+          <State name="ZERO" />
+        </States>
+      </Variable>
+      <Variable name="VENTLUNG" type="finiteStates" role="chance">
+        <Coordinates x="743" y="455" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="HIGH" />
+          <State name="NORMAL" />
+          <State name="LOW" />
+          <State name="ZERO" />
+        </States>
+      </Variable>
+      <Variable name="VENTALV" type="finiteStates" role="chance">
+        <Coordinates x="587" y="643" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="HIGH" />
+          <State name="NORMAL" />
+          <State name="LOW" />
+          <State name="ZERO" />
+        </States>
+      </Variable>
+      <Variable name="ARTCO2" type="finiteStates" role="chance">
+        <Coordinates x="372" y="753" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="HIGH" />
+          <State name="NORMAL" />
+          <State name="LOW" />
+        </States>
+      </Variable>
+      <Variable name="CATECHOL" type="finiteStates" role="chance">
+        <Coordinates x="1124" y="725" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="HIGH" />
+          <State name="NORMAL" />
+        </States>
+      </Variable>
+      <Variable name="HR" type="finiteStates" role="chance">
+        <Coordinates x="1080" y="838" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="HIGH" />
+          <State name="NORMAL" />
+          <State name="LOW" />
+        </States>
+      </Variable>
+      <Variable name="CO" type="finiteStates" role="chance">
+        <Coordinates x="752" y="879" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="HIGH" />
+          <State name="NORMAL" />
+          <State name="LOW" />
+        </States>
+      </Variable>
+      <Variable name="BP" type="finiteStates" role="chance">
+        <Coordinates x="1121" y="972" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="HIGH" />
+          <State name="NORMAL" />
+          <State name="LOW" />
+        </States>
+      </Variable>
+    </Variables>
+    <Links>
+      <Link directed="true">
+        <Variable name="HYPOVOLEMIA" />
+        <Variable name="LVEDVOLUME" />
+      </Link>
+      <Link directed="true">
+        <Variable name="HYPOVOLEMIA" />
+        <Variable name="STROKEVOLUME" />
+      </Link>
+      <Link directed="true">
+        <Variable name="LVEDVOLUME" />
+        <Variable name="CVP" />
+      </Link>
+      <Link directed="true">
+        <Variable name="LVEDVOLUME" />
+        <Variable name="PCWP" />
+      </Link>
+      <Link directed="true">
+        <Variable name="LVFAILURE" />
+        <Variable name="HISTORY" />
+      </Link>
+      <Link directed="true">
+        <Variable name="LVFAILURE" />
+        <Variable name="LVEDVOLUME" />
+      </Link>
+      <Link directed="true">
+        <Variable name="LVFAILURE" />
+        <Variable name="STROKEVOLUME" />
+      </Link>
+      <Link directed="true">
+        <Variable name="STROKEVOLUME" />
+        <Variable name="CO" />
+      </Link>
+      <Link directed="true">
+        <Variable name="ERRLOWOUTPUT" />
+        <Variable name="HRBP" />
+      </Link>
+      <Link directed="true">
+        <Variable name="ERRCAUTER" />
+        <Variable name="HREKG" />
+      </Link>
+      <Link directed="true">
+        <Variable name="ERRCAUTER" />
+        <Variable name="HRSAT" />
+      </Link>
+      <Link directed="true">
+        <Variable name="INSUFFANESTH" />
+        <Variable name="CATECHOL" />
+      </Link>
+      <Link directed="true">
+        <Variable name="ANAPHYLAXIS" />
+        <Variable name="TPR" />
+      </Link>
+      <Link directed="true">
+        <Variable name="TPR" />
+        <Variable name="BP" />
+      </Link>
+      <Link directed="true">
+        <Variable name="TPR" />
+        <Variable name="CATECHOL" />
+      </Link>
+      <Link directed="true">
+        <Variable name="KINKEDTUBE" />
+        <Variable name="PRESS" />
+      </Link>
+      <Link directed="true">
+        <Variable name="KINKEDTUBE" />
+        <Variable name="VENTLUNG" />
+      </Link>
+      <Link directed="true">
+        <Variable name="FIO2" />
+        <Variable name="PVSAT" />
+      </Link>
+      <Link directed="true">
+        <Variable name="PVSAT" />
+        <Variable name="SAO2" />
+      </Link>
+      <Link directed="true">
+        <Variable name="SAO2" />
+        <Variable name="CATECHOL" />
+      </Link>
+      <Link directed="true">
+        <Variable name="PULMEMBOLUS" />
+        <Variable name="PAP" />
+      </Link>
+      <Link directed="true">
+        <Variable name="PULMEMBOLUS" />
+        <Variable name="SHUNT" />
+      </Link>
+      <Link directed="true">
+        <Variable name="SHUNT" />
+        <Variable name="SAO2" />
+      </Link>
+      <Link directed="true">
+        <Variable name="INTUBATION" />
+        <Variable name="MINVOL" />
+      </Link>
+      <Link directed="true">
+        <Variable name="INTUBATION" />
+        <Variable name="PRESS" />
+      </Link>
+      <Link directed="true">
+        <Variable name="INTUBATION" />
+        <Variable name="SHUNT" />
+      </Link>
+      <Link directed="true">
+        <Variable name="INTUBATION" />
+        <Variable name="VENTALV" />
+      </Link>
+      <Link directed="true">
+        <Variable name="INTUBATION" />
+        <Variable name="VENTLUNG" />
+      </Link>
+      <Link directed="true">
+        <Variable name="DISCONNECT" />
+        <Variable name="VENTTUBE" />
+      </Link>
+      <Link directed="true">
+        <Variable name="MINVOLSET" />
+        <Variable name="VENTMACH" />
+      </Link>
+      <Link directed="true">
+        <Variable name="VENTMACH" />
+        <Variable name="VENTTUBE" />
+      </Link>
+      <Link directed="true">
+        <Variable name="VENTTUBE" />
+        <Variable name="PRESS" />
+      </Link>
+      <Link directed="true">
+        <Variable name="VENTTUBE" />
+        <Variable name="VENTLUNG" />
+      </Link>
+      <Link directed="true">
+        <Variable name="VENTLUNG" />
+        <Variable name="EXPCO2" />
+      </Link>
+      <Link directed="true">
+        <Variable name="VENTLUNG" />
+        <Variable name="MINVOL" />
+      </Link>
+      <Link directed="true">
+        <Variable name="VENTLUNG" />
+        <Variable name="VENTALV" />
+      </Link>
+      <Link directed="true">
+        <Variable name="VENTALV" />
+        <Variable name="ARTCO2" />
+      </Link>
+      <Link directed="true">
+        <Variable name="VENTALV" />
+        <Variable name="PVSAT" />
+      </Link>
+      <Link directed="true">
+        <Variable name="ARTCO2" />
+        <Variable name="CATECHOL" />
+      </Link>
+      <Link directed="true">
+        <Variable name="ARTCO2" />
+        <Variable name="EXPCO2" />
+      </Link>
+      <Link directed="true">
+        <Variable name="CATECHOL" />
+        <Variable name="HR" />
+      </Link>
+      <Link directed="true">
+        <Variable name="HR" />
+        <Variable name="CO" />
+      </Link>
+      <Link directed="true">
+        <Variable name="HR" />
+        <Variable name="HRBP" />
+      </Link>
+      <Link directed="true">
+        <Variable name="HR" />
+        <Variable name="HREKG" />
+      </Link>
+      <Link directed="true">
+        <Variable name="HR" />
+        <Variable name="HRSAT" />
+      </Link>
+      <Link directed="true">
+        <Variable name="CO" />
+        <Variable name="BP" />
+      </Link>
+    </Links>
+    <Potentials>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="HISTORY" />
+          <Variable name="LVFAILURE" />
+        </Variables>
+        <Values>0.99 0.01 0.1 0.9</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="CVP" />
+          <Variable name="LVEDVOLUME" />
+        </Variables>
+        <Values>0.7 0.29 0.01 0.01 0.95 0.04 0.01 0.04 0.95</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="PCWP" />
+          <Variable name="LVEDVOLUME" />
+        </Variables>
+        <Values>0.95 0.04 0.01 0.01 0.95 0.04 0.01 0.04 0.95</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="HYPOVOLEMIA" />
+        </Variables>
+        <Values>0.8 0.2</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="LVEDVOLUME" />
+          <Variable name="HYPOVOLEMIA" />
+          <Variable name="LVFAILURE" />
+        </Variables>
+        <Values>0.05 0.9 0.05 0.9 0.09 0.01 0.01 0.01 0.98 0.01 0.04 0.95</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="LVFAILURE" />
+        </Variables>
+        <Values>0.95 0.05</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="STROKEVOLUME" />
+          <Variable name="HYPOVOLEMIA" />
+          <Variable name="LVFAILURE" />
+        </Variables>
+        <Values>0.05 0.9 0.05 0.01 0.49 0.5 0.01 0.04 0.95 0.01 0.01 0.98</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="ERRLOWOUTPUT" />
+        </Variables>
+        <Values>0.95 0.05</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="HRBP" />
+          <Variable name="ERRLOWOUTPUT" />
+          <Variable name="HR" />
+        </Variables>
+        <Values>0.98 0.01 0.01 0.01 0.98 0.01 0.01 0.01 0.98 0.3 0.4 0.3 0.01 0.59 0.4 0.01 0.01 0.98</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="HREKG" />
+          <Variable name="ERRCAUTER" />
+          <Variable name="HR" />
+        </Variables>
+        <Values>0.98 0.01 0.01 0.01 0.98 0.01 0.01 0.01 0.98 0.33333334 0.33333334 0.33333334 0.33333334 0.33333334 0.33333334 0.33333334 0.33333334 0.33333334</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="ERRCAUTER" />
+        </Variables>
+        <Values>0.9 0.1</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="HRSAT" />
+          <Variable name="ERRCAUTER" />
+          <Variable name="HR" />
+        </Variables>
+        <Values>0.98 0.01 0.01 0.01 0.98 0.01 0.01 0.01 0.98 0.33333334 0.33333334 0.33333334 0.33333334 0.33333334 0.33333334 0.33333334 0.33333334 0.33333334</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="INSUFFANESTH" />
+        </Variables>
+        <Values>0.9 0.1</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="ANAPHYLAXIS" />
+        </Variables>
+        <Values>0.99 0.01</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="TPR" />
+          <Variable name="ANAPHYLAXIS" />
+        </Variables>
+        <Values>0.3 0.4 0.3 0.01 0.01 0.98</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="EXPCO2" />
+          <Variable name="ARTCO2" />
+          <Variable name="VENTLUNG" />
+        </Variables>
+        <Values>0.97 0.01 0.01 0.01 0.97 0.01 0.01 0.01 0.97 0.01 0.01 0.01 0.01 0.01 0.01 0.97 0.01 0.97 0.01 0.01 0.01 0.97 0.01 0.01 0.01 0.97 0.01 0.01 0.01 0.01 0.01 0.97 0.01 0.01 0.97 0.01 0.01 0.01 0.97 0.01 0.01 0.01 0.97 0.01 0.01 0.01 0.01 0.97</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="KINKEDTUBE" />
+        </Variables>
+        <Values>0.96 0.04</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="MINVOL" />
+          <Variable name="INTUBATION" />
+          <Variable name="VENTLUNG" />
+        </Variables>
+        <Values>0.97 0.01 0.01 0.01 0.01 0.97 0.01 0.01 0.01 0.01 0.97 0.01 0.01 0.01 0.01 0.97 0.01 0.01 0.48 0.5 0.01 0.01 0.48 0.5 0.01 0.01 0.38 0.6 0.01 0.01 0.01 0.97 0.97 0.01 0.01 0.01 0.01 0.97 0.01 0.01 0.01 0.01 0.97 0.01 0.01 0.01 0.01 0.97</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="FIO2" />
+        </Variables>
+        <Values>0.95 0.05</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="PVSAT" />
+          <Variable name="FIO2" />
+          <Variable name="VENTALV" />
+        </Variables>
+        <Values>0.98 0.01 0.01 0.04 0.95 0.01 0.01 0.04 0.95 0.0 0.0 1.0 0.01 0.04 0.95 0.01 0.04 0.95 0.0 0.01 0.99 0.0 0.0 1.0</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="SAO2" />
+          <Variable name="PVSAT" />
+          <Variable name="SHUNT" />
+        </Variables>
+        <Values>0.01 0.3 0.69 0.01 0.01 0.98 0.01 0.01 0.98 0.98 0.01 0.01 0.01 0.98 0.01 0.01 0.01 0.98</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="PAP" />
+          <Variable name="PULMEMBOLUS" />
+        </Variables>
+        <Values>0.05 0.9 0.05 0.8 0.19 0.01</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="PULMEMBOLUS" />
+        </Variables>
+        <Values>0.99 0.01</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="SHUNT" />
+          <Variable name="INTUBATION" />
+          <Variable name="PULMEMBOLUS" />
+        </Variables>
+        <Values>0.95 0.05 0.05 0.95 0.05 0.95 0.99 0.01 0.9 0.1 0.9 0.1</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="INTUBATION" />
+        </Variables>
+        <Values>0.05 0.03 0.92</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="PRESS" />
+          <Variable name="INTUBATION" />
+          <Variable name="KINKEDTUBE" />
+          <Variable name="VENTTUBE" />
+        </Variables>
+        <Values>0.97 0.01 0.01 0.01 0.6 0.38 0.01 0.01 0.010000001 0.080000006 0.90000004 0.010000001 0.01 0.01 0.01 0.97 0.01 0.09 0.7 0.2 0.01 0.04 0.75 0.2 0.01 0.01 0.58 0.4 0.01 0.01 0.01 0.97 0.97 0.01 0.01 0.01 0.01 0.97 0.01 0.01 0.01 0.01 0.97 0.01 0.01 0.01 0.01 0.97 0.97 0.01 0.01 0.01 0.9 0.08 0.01 0.01 0.4 0.3 0.29 0.01 0.01 0.01 0.01 0.97 0.59 0.25 0.15 0.01 0.45 0.25 0.25 0.05 0.01 0.05 0.84 0.1 0.01 0.01 0.01 0.97 0.97 0.01 0.01 0.01 0.9 0.08 0.01 0.01 0.2 0.49 0.3 0.01 0.01 0.01 0.01 0.97</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="DISCONNECT" />
+        </Variables>
+        <Values>0.9 0.1</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="MINVOLSET" />
+        </Variables>
+        <Values>0.05 0.9 0.05</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="VENTMACH" />
+          <Variable name="MINVOLSET" />
+        </Variables>
+        <Values>0.93 0.01 0.01 0.05 0.01 0.93 0.01 0.05 0.01 0.01 0.93 0.05</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="VENTTUBE" />
+          <Variable name="DISCONNECT" />
+          <Variable name="VENTMACH" />
+        </Variables>
+        <Values>0.97 0.01 0.01 0.01 0.01 0.97 0.01 0.01 0.01 0.01 0.97 0.01 0.01 0.01 0.01 0.97 0.01 0.01 0.01 0.97 0.01 0.01 0.01 0.97 0.01 0.01 0.01 0.97 0.01 0.01 0.01 0.97</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="VENTLUNG" />
+          <Variable name="INTUBATION" />
+          <Variable name="KINKEDTUBE" />
+          <Variable name="VENTTUBE" />
+        </Variables>
+        <Values>0.97 0.01 0.01 0.01 0.01 0.97 0.01 0.01 0.01 0.01 0.97 0.01 0.01 0.01 0.01 0.97 0.01 0.01 0.01 0.97 0.01 0.01 0.01 0.97 0.01 0.01 0.01 0.97 0.01 0.01 0.01 0.97 0.97 0.01 0.01 0.01 0.01 0.97 0.01 0.01 0.01 0.01 0.97 0.01 0.01 0.01 0.01 0.97 0.01 0.01 0.68 0.3 0.01 0.01 0.48 0.5 0.010000001 0.010000001 0.030000001 0.95000005 0.01 0.01 0.01 0.97 0.01 0.01 0.01 0.97 0.01 0.01 0.01 0.97 0.01 0.01 0.01 0.97 0.01 0.01 0.01 0.97 0.01 0.01 0.68 0.3 0.01 0.01 0.58 0.4 0.010000001 0.010000001 0.030000001 0.95000005 0.01 0.01 0.01 0.97</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="VENTALV" />
+          <Variable name="INTUBATION" />
+          <Variable name="VENTLUNG" />
+        </Variables>
+        <Values>0.01 0.1 0.88 0.01 0.01 0.04 0.94 0.01 0.010000001 0.010000001 0.95000005 0.030000001 0.01 0.01 0.01 0.97 0.97 0.01 0.01 0.01 0.01 0.97 0.01 0.01 0.01 0.01 0.97 0.01 0.01 0.01 0.01 0.97 0.97 0.01 0.01 0.01 0.01 0.97 0.01 0.01 0.01 0.01 0.97 0.01 0.01 0.01 0.01 0.97</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="ARTCO2" />
+          <Variable name="VENTALV" />
+        </Variables>
+        <Values>0.01 0.09 0.9 0.04 0.92 0.04 0.98 0.01 0.01 0.98 0.01 0.01</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="CATECHOL" />
+          <Variable name="ARTCO2" />
+          <Variable name="INSUFFANESTH" />
+          <Variable name="SAO2" />
+          <Variable name="TPR" />
+        </Variables>
+        <Values>0.7 0.3 0.01 0.99 0.05 0.95 0.7 0.3 0.01 0.99 0.05 0.95 0.7 0.3 0.01 0.99 0.05 0.95 0.9 0.1 0.3 0.7 0.3 0.7 0.9 0.1 0.3 0.7 0.3 0.7 0.9 0.1 0.3 0.7 0.3 0.7 0.99 0.01 0.95 0.05 0.95 0.05 0.99 0.01 0.95 0.05 0.95 0.05 0.99 0.01 0.95 0.05 0.95 0.05 0.99 0.01 0.95 0.05 0.95 0.05 0.99 0.01 0.95 0.05 0.95 0.05 0.99 0.01 0.99 0.01 0.99 0.01 0.99 0.01 0.95 0.05 0.95 0.05 0.99 0.01 0.99 0.01 0.99 0.01 0.99 0.01 0.99 0.01 0.99 0.01 0.99 0.01 0.99 0.01 0.99 0.01 0.99 0.01 0.99 0.01 0.99 0.01 0.99 0.01 0.99 0.01 0.99 0.01</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="HR" />
+          <Variable name="CATECHOL" />
+        </Variables>
+        <Values>0.9 0.09 0.01 0.05 0.9 0.05</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="CO" />
+          <Variable name="HR" />
+          <Variable name="STROKEVOLUME" />
+        </Variables>
+        <Values>0.98 0.01 0.01 0.69 0.3 0.01 0.01 0.69 0.3 0.95 0.04 0.01 0.01 0.95 0.04 0.01 0.04 0.95 0.01 0.19 0.8 0.01 0.04 0.95 0.01 0.01 0.98</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="BP" />
+          <Variable name="CO" />
+          <Variable name="TPR" />
+        </Variables>
+        <Values>0.9 0.09 0.01 0.55 0.4 0.05 0.1 0.6 0.3 0.75 0.2 0.05 0.05 0.85 0.1 0.01 0.01 0.98 0.01 0.09 0.9 0.01 0.01 0.98 0.01 0.01 0.98</Values>
+      </Potential>
+    </Potentials>
+  </ProbNet>
+  <InferenceOptions>
+    <MulticriteriaOptions>
+      <SelectedAnalysisType>UNICRITERION</SelectedAnalysisType>
+      <Unicriterion>
+        <Scales>
+          <Scale Criterion="---" Value="1.0" />
+        </Scales>
+      </Unicriterion>
+      <CostEffectiveness>
+        <Scales>
+          <Scale Criterion="---" Value="1.0" />
+        </Scales>
+        <CE_Criteria>
+          <CE_Criterion Criterion="---" Value="Cost" />
+        </CE_Criteria>
+      </CostEffectiveness>
+    </MulticriteriaOptions>
+  </InferenceOptions>
+</ProbModelXML>

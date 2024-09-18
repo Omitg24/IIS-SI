@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ProbModelXML formatVersion="0.2.0">
+  <ProbNet type="BayesianNetwork">
+    <Comment showWhenOpeningNetwork="false"><![CDATA[<<Double click to add/modify comment>>]]></Comment>
+    <DecisionCriteria>
+      <Criterion name="---" unit="---" />
+    </DecisionCriteria>
+    <Properties />
+    <Variables>
+      <Variable name="A" type="finiteStates" role="chance">
+        <Coordinates x="293" y="171" />
+        <States>
+          <State name="absent" />
+          <State name="present" />
+        </States>
+      </Variable>
+      <Variable name="B" type="finiteStates" role="chance">
+        <Coordinates x="200" y="171" />
+        <States>
+          <State name="absent" />
+          <State name="present" />
+        </States>
+      </Variable>
+      <Variable name="C" type="finiteStates" role="chance">
+        <Coordinates x="140" y="260" />
+        <States>
+          <State name="absent" />
+          <State name="present" />
+        </States>
+      </Variable>
+      <Variable name="E" type="finiteStates" role="chance">
+        <Coordinates x="339" y="259" />
+        <States>
+          <State name="absent" />
+          <State name="present" />
+        </States>
+      </Variable>
+      <Variable name="F" type="finiteStates" role="chance">
+        <Coordinates x="391" y="168" />
+        <States>
+          <State name="absent" />
+          <State name="present" />
+        </States>
+      </Variable>
+      <Variable name="D" type="finiteStates" role="chance">
+        <Coordinates x="232" y="261" />
+        <States>
+          <State name="absent" />
+          <State name="present" />
+        </States>
+      </Variable>
+    </Variables>
+    <Links>
+      <Link directed="true">
+        <Variable name="A" />
+        <Variable name="E" />
+      </Link>
+      <Link directed="true">
+        <Variable name="A" />
+        <Variable name="D" />
+      </Link>
+      <Link directed="true">
+        <Variable name="B" />
+        <Variable name="D" />
+      </Link>
+      <Link directed="true">
+        <Variable name="B" />
+        <Variable name="C" />
+      </Link>
+      <Link directed="true">
+        <Variable name="F" />
+        <Variable name="E" />
+      </Link>
+    </Links>
+    <Potentials>
+      <Potential type="Uniform" role="conditionalProbability">
+        <Variables>
+          <Variable name="A" />
+        </Variables>
+      </Potential>
+      <Potential type="Uniform" role="conditionalProbability">
+        <Variables>
+          <Variable name="B" />
+        </Variables>
+      </Potential>
+      <Potential type="Uniform" role="conditionalProbability">
+        <Variables>
+          <Variable name="C" />
+          <Variable name="B" />
+        </Variables>
+      </Potential>
+      <Potential type="Uniform" role="conditionalProbability">
+        <Variables>
+          <Variable name="E" />
+          <Variable name="A" />
+          <Variable name="F" />
+        </Variables>
+      </Potential>
+      <Potential type="Uniform" role="conditionalProbability">
+        <Variables>
+          <Variable name="F" />
+        </Variables>
+      </Potential>
+      <Potential type="Uniform" role="conditionalProbability">
+        <Variables>
+          <Variable name="D" />
+          <Variable name="B" />
+          <Variable name="A" />
+        </Variables>
+      </Potential>
+    </Potentials>
+  </ProbNet>
+  <InferenceOptions>
+    <MulticriteriaOptions>
+      <SelectedAnalysisType>UNICRITERION</SelectedAnalysisType>
+      <Unicriterion>
+        <Scales>
+          <Scale Criterion="---" Value="1.0" />
+        </Scales>
+      </Unicriterion>
+      <CostEffectiveness>
+        <Scales>
+          <Scale Criterion="---" Value="1.0" />
+        </Scales>
+        <CE_Criteria>
+          <CE_Criterion Criterion="---" Value="Cost" />
+        </CE_Criteria>
+      </CostEffectiveness>
+    </MulticriteriaOptions>
+  </InferenceOptions>
+</ProbModelXML>

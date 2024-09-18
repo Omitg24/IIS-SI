@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ProbModelXML formatVersion="0.2.0">
+  <ProbNet type="BayesianNetwork">
+    <DecisionCriteria>
+      <Criterion name="---" unit="---" />
+    </DecisionCriteria>
+    <Properties>
+      <Property name="Version" value="1.0" />
+      <Property name="KindOfGraph" value="directed" />
+      <Property name="VisualPrecision" value="0.0" />
+    </Properties>
+    <Variables>
+      <Variable name="BirthAsphyxia" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="no" />
+          <State name="yes" />
+        </States>
+      </Variable>
+      <Variable name="HypDistrib" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Unequal" />
+          <State name="Equal" />
+        </States>
+      </Variable>
+      <Variable name="HypoxiaInO2" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Severe" />
+          <State name="Moderate" />
+          <State name="Mild" />
+        </States>
+      </Variable>
+      <Variable name="CO2" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="High" />
+          <State name="Low" />
+          <State name="Normal" />
+        </States>
+      </Variable>
+      <Variable name="ChestXray" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Asy_Patch" />
+          <State name="Grd_Glass" />
+          <State name="Plethoric" />
+          <State name="Oligaemic" />
+          <State name="Normal" />
+        </States>
+      </Variable>
+      <Variable name="Grunting" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="no" />
+          <State name="yes" />
+        </States>
+      </Variable>
+      <Variable name="LVHreport" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="no" />
+          <State name="yes" />
+        </States>
+      </Variable>
+      <Variable name="LowerBodyO2" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="12+" />
+          <State name="5-12" />
+          <State name="&lt;5" />
+        </States>
+      </Variable>
+      <Variable name="RUQO2" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="12+" />
+          <State name="5-12" />
+          <State name="&lt;5" />
+        </States>
+      </Variable>
+      <Variable name="CO2Report" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="&gt;=7.5" />
+          <State name="&lt;7.5" />
+        </States>
+      </Variable>
+      <Variable name="XrayReport" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Asy_Patchy" />
+          <State name="Grd_Glass" />
+          <State name="Plethoric" />
+          <State name="Oligaemic" />
+          <State name="Normal" />
+        </States>
+      </Variable>
+      <Variable name="Disease" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Lung" />
+          <State name="TAPVD" />
+          <State name="PAIVS" />
+          <State name="Fallot" />
+          <State name="TGA" />
+          <State name="PFC" />
+        </States>
+      </Variable>
+      <Variable name="GruntingReport" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="no" />
+          <State name="yes" />
+        </States>
+      </Variable>
+      <Variable name="Age" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="11-30_days" />
+          <State name="4-10_days" />
+          <State name="0-3_days" />
+        </States>
+      </Variable>
+      <Variable name="LVH" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="no" />
+          <State name="yes" />
+        </States>
+      </Variable>
+      <Variable name="DuctFlow" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Rt_to_Lt" />
+          <State name="None" />
+          <State name="Lt_to_Rt" />
+        </States>
+      </Variable>
+      <Variable name="CardiacMixing" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Transp." />
+          <State name="Complete" />
+          <State name="Mild" />
+          <State name="None" />
+        </States>
+      </Variable>
+      <Variable name="LungParench" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="Abnormal" />
+          <State name="Congested" />
+          <State name="Normal" />
+        </States>
+      </Variable>
+      <Variable name="LungFlow" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="High" />
+          <State name="Low" />
+          <State name="Normal" />
+        </States>
+      </Variable>
+      <Variable name="Sick" type="finiteStates" role="chance">
+        <Coordinates x="150" y="50" />
+        <Properties>
+          <Property name="Relevance" value="7.0" />
+        </Properties>
+        <States>
+          <State name="no" />
+          <State name="yes" />
+        </States>
+      </Variable>
+    </Variables>
+    <Links>
+      <Link directed="true">
+        <Variable name="BirthAsphyxia" />
+        <Variable name="Disease" />
+      </Link>
+      <Link directed="true">
+        <Variable name="HypDistrib" />
+        <Variable name="LowerBodyO2" />
+      </Link>
+      <Link directed="true">
+        <Variable name="HypoxiaInO2" />
+        <Variable name="LowerBodyO2" />
+      </Link>
+      <Link directed="true">
+        <Variable name="HypoxiaInO2" />
+        <Variable name="RUQO2" />
+      </Link>
+      <Link directed="true">
+        <Variable name="CO2" />
+        <Variable name="CO2Report" />
+      </Link>
+      <Link directed="true">
+        <Variable name="ChestXray" />
+        <Variable name="XrayReport" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Grunting" />
+        <Variable name="GruntingReport" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Disease" />
+        <Variable name="Age" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Disease" />
+        <Variable name="CardiacMixing" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Disease" />
+        <Variable name="DuctFlow" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Disease" />
+        <Variable name="LVH" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Disease" />
+        <Variable name="LungFlow" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Disease" />
+        <Variable name="LungParench" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Disease" />
+        <Variable name="Sick" />
+      </Link>
+      <Link directed="true">
+        <Variable name="LVH" />
+        <Variable name="LVHreport" />
+      </Link>
+      <Link directed="true">
+        <Variable name="DuctFlow" />
+        <Variable name="HypDistrib" />
+      </Link>
+      <Link directed="true">
+        <Variable name="CardiacMixing" />
+        <Variable name="HypDistrib" />
+      </Link>
+      <Link directed="true">
+        <Variable name="CardiacMixing" />
+        <Variable name="HypoxiaInO2" />
+      </Link>
+      <Link directed="true">
+        <Variable name="LungParench" />
+        <Variable name="CO2" />
+      </Link>
+      <Link directed="true">
+        <Variable name="LungParench" />
+        <Variable name="ChestXray" />
+      </Link>
+      <Link directed="true">
+        <Variable name="LungParench" />
+        <Variable name="Grunting" />
+      </Link>
+      <Link directed="true">
+        <Variable name="LungParench" />
+        <Variable name="HypoxiaInO2" />
+      </Link>
+      <Link directed="true">
+        <Variable name="LungFlow" />
+        <Variable name="ChestXray" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Sick" />
+        <Variable name="Age" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Sick" />
+        <Variable name="Grunting" />
+      </Link>
+    </Links>
+    <Potentials>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="BirthAsphyxia" />
+        </Variables>
+        <Values>0.9 0.1</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="HypDistrib" />
+          <Variable name="DuctFlow" />
+          <Variable name="CardiacMixing" />
+        </Variables>
+        <Values>0.5 0.5 0.05 0.95 0.05 0.95 0.05 0.95 0.05 0.95 0.05 0.95 0.5 0.5 0.05 0.95 0.05 0.95 0.95 0.05 0.05 0.95 0.05 0.95</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="HypoxiaInO2" />
+          <Variable name="CardiacMixing" />
+          <Variable name="LungParench" />
+        </Variables>
+        <Values>0.8 0.18 0.02 0.4 0.5 0.1 0.25 0.65 0.1 0.1 0.2 0.7 0.6 0.3 0.1 0.3 0.65 0.05 0.15 0.75 0.1 0.05 0.8 0.15 0.8 0.18 0.02 0.2 0.7 0.1 0.1 0.8 0.1 0.02 0.05 0.93</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="CO2" />
+          <Variable name="LungParench" />
+        </Variables>
+        <Values>0.5 0.05 0.45 0.3 0.05 0.65 0.1 0.1 0.8</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="ChestXray" />
+          <Variable name="LungParench" />
+          <Variable name="LungFlow" />
+        </Variables>
+        <Values>0.06 0.34 0.03 0.33 0.24 0.13 0.4 0.4 0.02 0.05 0.01 0.04 0.79 0.01 0.15 0.7 0.05 0.05 0.15 0.05 0.15 0.5 0.08 0.22 0.05 0.02 0.02 0.02 0.8 0.14 0.8 0.05 0.05 0.05 0.05 0.08 0.7 0.15 0.02 0.05 0.03 0.01 0.03 0.03 0.9</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="Grunting" />
+          <Variable name="LungParench" />
+          <Variable name="Sick" />
+        </Variables>
+        <Values>0.4 0.6 0.8 0.2 0.95 0.05 0.2 0.8 0.6 0.4 0.8 0.2</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="LVHreport" />
+          <Variable name="LVH" />
+        </Variables>
+        <Values>0.95 0.05 0.1 0.9</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="LowerBodyO2" />
+          <Variable name="HypDistrib" />
+          <Variable name="HypoxiaInO2" />
+        </Variables>
+        <Values>0.05 0.35 0.6 0.1 0.4 0.5 0.05 0.45 0.5 0.1 0.6 0.3 0.1 0.5 0.4 0.6 0.3 0.1</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="RUQO2" />
+          <Variable name="HypoxiaInO2" />
+        </Variables>
+        <Values>0.1 0.4 0.5 0.1 0.6 0.3 0.6 0.3 0.1</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="CO2Report" />
+          <Variable name="CO2" />
+        </Variables>
+        <Values>0.9 0.1 0.1 0.9 0.1 0.9</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="XrayReport" />
+          <Variable name="ChestXray" />
+        </Variables>
+        <Values>0.7 0.1 0.1 0.02 0.08 0.2 0.6 0.1 0.02 0.08 0.06 0.02 0.8 0.02 0.1 0.06 0.02 0.02 0.8 0.1 0.06 0.02 0.06 0.06 0.8</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="Disease" />
+          <Variable name="BirthAsphyxia" />
+        </Variables>
+        <Values>0.05102041 0.05102041 0.23469388 0.29591837 0.33673469 0.03061224 0.05 0.05 0.15 0.25 0.3 0.2</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="GruntingReport" />
+          <Variable name="Grunting" />
+        </Variables>
+        <Values>0.9 0.1 0.2 0.8</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="Age" />
+          <Variable name="Disease" />
+          <Variable name="Sick" />
+        </Variables>
+        <Values>0.05 0.15 0.8 0.1 0.2 0.7 0.05 0.15 0.8 0.5 0.25 0.25 0.1 0.2 0.7 0.05 0.1 0.85 0.02 0.08 0.9 0.05 0.15 0.8 0.05 0.15 0.8 0.15 0.15 0.7 0.05 0.15 0.8 0.02 0.03 0.95</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="LVH" />
+          <Variable name="Disease" />
+        </Variables>
+        <Values>0.9 0.1 0.95 0.05 0.1 0.9 0.9 0.1 0.9 0.1 0.9 0.1</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="DuctFlow" />
+          <Variable name="Disease" />
+        </Variables>
+        <Values>0.4 0.4 0.2 0.34 0.33 0.33 0.0 0.0 1.0 0.0 0.2 0.8 0.1 0.8 0.1 0.8 0.05 0.15</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="CardiacMixing" />
+          <Variable name="Disease" />
+        </Variables>
+        <Values>0.02 0.05 0.53 0.4 0.01 0.95 0.03 0.01 0.02 0.95 0.02 0.01 0.02 0.8 0.16 0.02 0.8 0.09 0.09 0.02 0.02 0.15 0.43 0.4</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="LungParench" />
+          <Variable name="Disease" />
+        </Variables>
+        <Values>0.72 0.25 0.03 0.3 0.6 0.1 0.15 0.05 0.8 0.15 0.05 0.8 0.15 0.05 0.8 0.3 0.1 0.6</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="LungFlow" />
+          <Variable name="Disease" />
+        </Variables>
+        <Values>0.2 0.1 0.7 0.6 0.1 0.3 0.05 0.85 0.1 0.05 0.8 0.15 0.75 0.05 0.2 0.05 0.65 0.3</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="Sick" />
+          <Variable name="Disease" />
+        </Variables>
+        <Values>0.3 0.7 0.3 0.7 0.7 0.3 0.8 0.2 0.7 0.3 0.6 0.4</Values>
+      </Potential>
+    </Potentials>
+  </ProbNet>
+  <InferenceOptions>
+    <MulticriteriaOptions>
+      <SelectedAnalysisType>UNICRITERION</SelectedAnalysisType>
+      <Unicriterion>
+        <Scales>
+          <Scale Criterion="---" Value="1.0" />
+        </Scales>
+      </Unicriterion>
+      <CostEffectiveness>
+        <Scales>
+          <Scale Criterion="---" Value="1.0" />
+        </Scales>
+        <CE_Criteria>
+          <CE_Criterion Criterion="---" Value="Cost" />
+        </CE_Criteria>
+      </CostEffectiveness>
+    </MulticriteriaOptions>
+  </InferenceOptions>
+</ProbModelXML>
